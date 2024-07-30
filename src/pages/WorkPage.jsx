@@ -1,10 +1,14 @@
-import { StandardContainer } from '../components/Layout';
+import { StandardContainer } from "../components/Layout";
+
+import { AllWorkSection } from "../components/AllWorkSection";
+import { FeaturedWorkSection } from "../components/FeaturedWorkSection";
 
 function WorkPage() {
   return (
-    <StandardContainer>
-      <h1>Work Page</h1>
-    </StandardContainer>
+    <StandardContainer
+      leftColumnSection={[AllWorkSection]}
+      rightColumnSection={[FeaturedWorkSection]}
+    />
   );
 }
 
