@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #135959;
+    --base-00-color: #F7F6EF;
+    --base-20-color: #E8E7C9;
+    --base-30-color: #DEDDC0;
+    --base-40-color: #D6D4B0;
+    --base-80-color: #5B5D5D;
+    --base-90-color: #141818;
+    --overlay-30-color: rgba(255, 255, 255, 0.3);
+    --overlay-60-color: rgba(255, 255, 255, 0.6);
+}

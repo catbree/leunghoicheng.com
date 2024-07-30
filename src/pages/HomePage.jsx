@@ -1,6 +1,11 @@
+import { FullScreenContainer } from '../components/Layout';
+import '../styles/Layout.css'
+
 function HomePage() {
   return (
-    <h1>hello testing</h1>
+    <FullScreenContainer>
+      <h1>hello testing</h1>
+    </FullScreenContainer>
   );
 }
 
