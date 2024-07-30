@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Lexend';
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('src/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+}
+
 :root {
     --primary-color: #135959;
     --base-00-color: #F7F6EF;
@@ -8,4 +16,13 @@
     --base-90-color: #141818;
     --overlay-30-color: rgba(255, 255, 255, 0.3);
     --overlay-60-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }

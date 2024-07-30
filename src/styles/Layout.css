@@ -1,13 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 16px;
+    min-height: 100vh;
     background-color: var(--base-30-color);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: var(--overlay-30-color);
+    align-items: center;
+}
+
+.nav-links, .mode-options {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links li a, #mode-toggle {
+    text-decoration: none;
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}

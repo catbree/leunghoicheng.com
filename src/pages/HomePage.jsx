@@ -1,5 +1,4 @@
 import { FullScreenContainer } from '../components/Layout';
-import '../styles/Layout.css'
 
 function HomePage() {
   return (
