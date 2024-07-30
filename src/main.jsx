@@ -5,11 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/global.css";
 
 import HomePage from "./pages/HomePage";
+import WorkPage from "./pages/WorkPage";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "/about", element: <div>Hello world, aboutpage!</div> },
-  { path: "/work", element: <div>Hello world, workpage!</div> },
+  { path: "/about", element: <AboutPage /> },
+  { path: "/work", element: <WorkPage /> },
   { path: "/thoughts", element: <div>Hello world, thoughtpage, WIP!</div> },
 ]);
 

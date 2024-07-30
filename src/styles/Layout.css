@@ -1,3 +1,5 @@
+/* --Page Column Styling-- */
+
 .container {
     box-sizing: border-box;
     display: flex;
@@ -6,6 +8,29 @@
     min-height: 100vh;
     background-color: var(--base-30-color);
 }
+
+.fullscreen {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.standard {
+    height: auto;
+    overflow: auto;
+}
+
+.column-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --Navigation Styling-- */
 
 nav {
     display: flex;
