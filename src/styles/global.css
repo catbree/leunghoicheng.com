@@ -3,7 +3,7 @@
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
-    src: url('src/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+    src: url('/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
 }
 
 :root {

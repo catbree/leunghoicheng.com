@@ -8,10 +8,13 @@ import { MainContentSection } from "../components/MainContentSection";
 import { ImageContentSection } from "../components/ImageContentSection";
 
 const workEntries = {
-  "a-fake-case-study-greenview": () => import("../entries/a-fake-case-study-greenview.md"),
-  "case-study-portfolio-website-2024": () => import("../entries/case-study-portfolio-website-2024.md"),
+  "a-fake-case-study-greenview": () =>
+    import("../entries/a-fake-case-study-greenview.md"),
+  "case-study-portfolio-website-2024": () =>
+    import("../entries/case-study-portfolio-website-2024.md"),
   "message-board-project": () => import("../entries/message-board-project.md"),
-  "upcoming-passion-project": () => import("../entries/upcoming-passion-project.md"),
+  "upcoming-passion-project": () =>
+    import("../entries/upcoming-passion-project.md"),
 };
 
 function WorkEntryPage() {
@@ -28,7 +31,9 @@ function WorkEntryPage() {
         })
         .then((response) => {
           if (!response.ok) {
-            throw new Error(`Network response was not ok: ${response.statusText}`);
+            throw new Error(
+              `Network response was not ok: ${response.statusText}`
+            );
           }
           return response.text();
         })
@@ -50,8 +55,13 @@ function WorkEntryPage() {
 
   return (
     <StandardContainer
-      leftColumnSection={<MainContentSection content={content} />}
-      rightColumnSection={[<ImageContentSection key="imageContent" />, <ContentNavSection key="contentNav" />]}
+      leftColumn={<MainContentSection content={content} />}
+      rightColumn={
+        <>
+          <ImageContentSection  />
+          <ContentNavSection />
+        </>
+      }
     />
   );
 }

@@ -1,25 +1,25 @@
 import PropTypes from "prop-types";
 import "../styles/Layout.css";
 
-function FullScreenContainer({ leftColumnSection, rightColumnSection }) {
+function FullScreenContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container full-screen">
       <Header />
       <div className="column-grid">
-        <LeftColumn>{leftColumnSection}</LeftColumn>
-        <RightColumn>{rightColumnSection}</RightColumn>
+        <div className="left-column">{leftColumn}</div>
+        <div className="right-column">{rightColumn}</div>
       </div>
     </div>
   );
 }
 
-function StandardContainer({ leftColumnSection, rightColumnSection }) {
+function StandardContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container standard">
       <Header />
       <div className="column-grid">
-        <LeftColumn>{leftColumnSection}</LeftColumn>
-        <RightColumn>{rightColumnSection}</RightColumn>
+        <div className="left-column">{leftColumn}</div>
+        <div className="right-column">{rightColumn}</div>
       </div>
     </div>
   );
@@ -43,22 +43,6 @@ function Header() {
         <button id="mode-toggle">MODE</button>
       </ul>
     </nav>
-  );
-}
-
-function LeftColumn({ children }) {
-  return (
-    <div className="left-column">
-      {children}
-    </div>
-  );
-}
-
-function RightColumn({ children }) {
-  return (
-    <div className="right-column">
-      {children}
-    </div>
   );
 }
 
