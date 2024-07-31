@@ -6,7 +6,7 @@ import { GuestBoardSection } from "../components/GuestBoardSection";
 
 function HomePage() {
   return (
-    <FullScreenContainer leftColumnSection={[HeroSection]} rightColumnSection={[TweetSection, GuestBoardSection]} />
+    <FullScreenContainer leftColumnSection={[<HeroSection key="hero" />]} rightColumnSection={[<TweetSection key="tweet" />, <GuestBoardSection key="guestBoad" />]} />
   );
 }
 

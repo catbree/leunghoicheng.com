@@ -1,3 +1,9 @@
-export function MainContentSection() {
-    return <p>This is main content section.</p>;
-  }
+import ReactMarkdown from "react-markdown";
+
+export function MainContentSection({ content }) {
+  return (
+    <div>
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </div>
+  );
+}

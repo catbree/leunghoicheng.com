@@ -1,11 +1,6 @@
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import Markdown from "../entries/case-study-greenview.md";
-
-// export function HeroSection() {
-//   // eslint-disable-next-line
-//   return <ReactMarkdown children={Markdown} />;
-// }
+import Markdown from "../entries/a-fake-case-study-greenview.md";
 
 export function HeroSection() {
   const [text, setText] = useState(null);

@@ -49,9 +49,7 @@ function Header() {
 function LeftColumn({ children }) {
   return (
     <div className="left-column">
-      {children.map((Section, index) => (
-        <Section key={index} />
-      ))}
+      {children}
     </div>
   );
 }
@@ -59,9 +57,7 @@ function LeftColumn({ children }) {
 function RightColumn({ children }) {
   return (
     <div className="right-column">
-      {children.map((Section, index) => (
-        <Section key={index} />
-      ))}
+      {children}
     </div>
   );
 }
