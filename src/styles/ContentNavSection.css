@@ -1,0 +1,15 @@
+.content-nav-section {
+    height: 100%;
+
+}
+
+.nav-container {
+    margin: 0;
+    padding: 32px;
+
+    border-radius: 24px;
+    background: var(--overlay-60-color);
+
+    position: sticky;
+    top: 16px;
+}

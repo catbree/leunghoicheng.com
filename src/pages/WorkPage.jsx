@@ -1,7 +1,7 @@
 import { StandardContainer } from "../components/Layout";
 
-import { AllWorkSection } from "../components/AllWorkSection";
-import { FeaturedWorkSection } from "../components/FeaturedWorkSection";
+import AllWorkSection from "../components/AllWorkSection";
+import FeaturedWorkSection from "../components/FeaturedWorkSection";
 
 function WorkPage() {
   return (

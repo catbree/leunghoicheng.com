@@ -1,11 +1,39 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import matter from "gray-matter";
+import MarkdownIt from "markdown-it";
+import anchor from "markdown-it-anchor";
+import Toc from "markdown-it-toc-done-right";
 
 import { StandardContainer } from "../components/Layout";
-import { ContentNavSection } from "../components/ContentNavSection";
-import { MainContentSection } from "../components/MainContentSection";
-import { ImageContentSection } from "../components/ImageContentSection";
+import ContentNavSection from "../components/ContentNavSection";
+import MainContentSection from "../components/MainContentSection";
+import ImageContentSection from "../components/ImageContentSection";
+
+// Generates TOC
+const generateTOC = (markdown) => {
+  const md = new MarkdownIt()
+    .use(anchor, {
+      level: [1, 2],
+      permalink: false,
+    })
+    .use(Toc, {
+      listType: "ul",
+      containerClass: "toc",
+    });
+
+  // Render the markdown to HTML, needs a [[TOC]] placeholder for it to work
+  const contentWithToc = md.render(`[[toc]]${markdown}`);
+  // Create a temporary DOM element and set its innerHTML
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = contentWithToc;
+  // Select the nav element
+  const navElement = tempDiv.querySelector("nav.toc");
+  // Return the outerHTML of the nav element or an empty string if not found
+  const toc = navElement ? navElement.outerHTML : "";
+
+  return { toc, contentWithToc };
+};
 
 const workEntries = {
   "a-fake-case-study-greenview": () =>
@@ -19,14 +47,15 @@ const workEntries = {
 
 function WorkEntryPage() {
   const { slug } = useParams();
-  const [content, setContent] = useState("");
+  const [frontmatter, setFrontMatter] = useState();
+  const [contentwithToc, setContentWithToc] = useState(null);
+  const [toc, setToc] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (workEntries[slug]) {
       workEntries[slug]()
         .then((module) => {
-          console.log("Module loaded:", module);
           return fetch(module.default);
         })
         .then((response) => {
@@ -38,9 +67,16 @@ function WorkEntryPage() {
           return response.text();
         })
         .then((text) => {
-          console.log("Markdown text loaded:", text);
-          const { content } = matter(text);
-          setContent(content);
+          //gray-matter extracts front matter from content
+          const { content, data } = matter(text);
+          console.log(matter(text));
+          //use content to generate toc
+          const { toc, contentWithToc } = generateTOC(content);
+          //set 
+          setContentWithToc(contentWithToc);
+          setFrontMatter(data);
+          console.log(frontmatter);
+          setToc(toc);
         })
         .catch((err) => {
           console.error("Error loading content:", err);
@@ -55,11 +91,19 @@ function WorkEntryPage() {
 
   return (
     <StandardContainer
-      leftColumn={<MainContentSection content={content} />}
+      leftColumn={
+        <MainContentSection
+          content={contentwithToc}
+          date={frontmatter?.date || ""}
+          title={frontmatter?.title || ""}
+        />
+      }
       rightColumn={
         <>
-          <ImageContentSection  />
-          <ContentNavSection />
+          <ImageContentSection imageUrl={frontmatter?.imageUrl || ""} />
+          <ContentNavSection>
+            <div dangerouslySetInnerHTML={{ __html: toc }} />
+          </ContentNavSection>
         </>
       }
     />

@@ -1,4 +1,4 @@
-export function AllWorkSection() {
+export default function AllWorkSection() {
     return <p>This is all work section.</p>;
   }
   
