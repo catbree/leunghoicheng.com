@@ -6,11 +6,7 @@ function HomePage() {
   return (
     <FullScreenContainer
       leftColumn={<HeroSection />}
-      rightColumn={
-        <>
-          <MastodonSection />
-        </>
-      }
+      rightColumn={<MastodonSection />}
     />
   );
 }
