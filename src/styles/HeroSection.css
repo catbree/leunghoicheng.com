@@ -1,14 +1,52 @@
 .hero-section {
-    height:  100%;
+    height: 100%;
     border-radius: 24px;
-    overflow: clip;
+    overflow: hidden;
     }
 
 .sprite-container {
     width: 100%;
     height: 100%;
-    background: url(assets/hero.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    background: linear-gradient(to bottom, #a2b29f 50%, #494949 50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.sprite {
+    width: 100%;
+    padding-top: 67%;
+    background: url(assets/hero-splash-darker-bg.png);
+    background-size: 1800% 100%;
+    animation: cycle 5s steps(18) infinite;
+}
+
+@keyframes cycle {
+    from {background-position: 0 0;}
+    to {background-position: -1800% 0;}
+}
+
+/* .sprite-chicken {
+    width: 70%;
+    height: 400px;
+    margin:auto;
+    background: lightgray;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+.chicken {
+    width: 100%;
+    padding-top: 67%;
+    background: url(assets/hero-splash-darker-bg.png);
+    background-size: 1800% 100%;
+    animation: cycle 50s steps(18) infinite;
+    position: relative;
+}
+
+@keyframes cycle {
+    from {background-position: 0 0;}
+    to {background-position: -1800% 0;}
+} */

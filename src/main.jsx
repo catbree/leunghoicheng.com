@@ -8,13 +8,15 @@ import HomePage from "./pages/HomePage";
 import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import WorkEntryPage from "./pages/WorkEntryPage";
+import TestingPage from "./pages/TestingPage";
 
 const router = createBrowserRouter([
   {path: "/", element: <HomePage />},
   {path: "/work", element: <WorkPage />},
   {path: "work/:slug", element: <WorkEntryPage/>},
   {path: "/about", element: <AboutPage />},
-  {path:"*", element:<h1>Error Page</h1>}
+  {path:"*", element:<h1>Error Page</h1>},
+  {path: "/testing", element: <TestingPage />},
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,0 +1,22 @@
+.sprite-chicken {
+    width: 70%;
+    height: 400px;
+    margin:auto;
+    background: lightgray;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+.chicken {
+    width: 100%;
+    padding-top: 67%;
+    background: url(assets/hero-splash-darker-bg.png);
+    background-size: 1800% 100%;
+    animation: cycle 50s steps(18) infinite;
+    position: relative;
+}
+
+@keyframes cycle {
+    from {background-position: 0 0;}
+    to {background-position: -1800% 0;}
+}
