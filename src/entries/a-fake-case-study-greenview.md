@@ -1,6 +1,6 @@
 ---
 title: "A Fake Case Study of Greenview"
-slug: a-fake-case-study-of-greenview
+slug: /a-fake-case-study-greenview
 date: 30th July 2024
 description: "helps hotels manage their sustainability data and efforts"
 tags: productdesign casestudy

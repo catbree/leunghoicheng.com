@@ -1,7 +1,6 @@
 import { FullScreenContainer } from "../components/Layout";
 import HeroSection from "../components/HeroSection";
-import TweetSection from "../components/TweetSection";
-import GuestBoardSection from "../components/GuestBoardSection";
+import MastodonSection from "../components/MastodonSection";
 
 function HomePage() {
   return (
@@ -9,8 +8,7 @@ function HomePage() {
       leftColumn={<HeroSection />}
       rightColumn={
         <>
-          <TweetSection />
-          <GuestBoardSection />
+          <MastodonSection />
         </>
       }
     />

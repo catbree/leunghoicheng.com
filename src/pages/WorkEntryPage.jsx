@@ -47,7 +47,7 @@ const workEntries = {
 
 function WorkEntryPage() {
   const { slug } = useParams();
-  const [frontmatter, setFrontMatter] = useState();
+  const [frontMatter, setFrontMatter] = useState();
   const [contentwithToc, setContentWithToc] = useState(null);
   const [toc, setToc] = useState(null);
   const [error, setError] = useState(null);
@@ -75,7 +75,7 @@ function WorkEntryPage() {
           //set 
           setContentWithToc(contentWithToc);
           setFrontMatter(data);
-          console.log(frontmatter);
+          console.log(frontMatter);
           setToc(toc);
         })
         .catch((err) => {
@@ -85,7 +85,7 @@ function WorkEntryPage() {
     } else {
       setError("Content not found.");
     }
-  }, [slug]);
+  }, [slug, frontMatter]);
 
   if (error) return <div>{error}</div>;
 
@@ -94,13 +94,13 @@ function WorkEntryPage() {
       leftColumn={
         <MainContentSection
           content={contentwithToc}
-          date={frontmatter?.date || ""}
-          title={frontmatter?.title || ""}
+          date={frontMatter?.date || ""}
+          title={frontMatter?.title || ""}
         />
       }
       rightColumn={
         <>
-          <ImageContentSection imageUrl={frontmatter?.imageUrl || ""} />
+          <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
           <ContentNavSection>
             <div dangerouslySetInnerHTML={{ __html: toc }} />
           </ContentNavSection>
