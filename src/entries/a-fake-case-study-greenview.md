@@ -9,6 +9,10 @@ imageUrl: "/assets/entryAssets/case-study-greenview-thumbnail.jpg"
 
 Vite is an opinionated web dev build tool that serves your code via native ES Module imports during dev and bundles it with Rollup for production.
 ___
+
+[[toc]]
+___
+
 ## Introduction
 For 2023 I was hoping to do some experimenting with [view transitions](#), but they didn’t seem quite ready for me yet. So the ol’ thinking cap went back on.
 
