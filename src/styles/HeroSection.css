@@ -18,7 +18,7 @@
 .sprite {
     width: 100%;
     padding-top: 67%;
-    background: url(assets/hero-splash-darker-bg.png);
+    background: url('assets/hero-splash-darker-bg.png');
     background-size: 1800% 100%;
     animation: cycle 5s steps(18) infinite;
 }
