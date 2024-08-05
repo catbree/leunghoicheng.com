@@ -13,6 +13,7 @@ export default function MastodonSection() {
     maxNbPostShow: "5",
     btnSeeMore: "",
     btnReload: "",
+    defaultTheme: "light",
   });
 
   return (

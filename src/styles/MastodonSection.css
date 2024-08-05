@@ -1,31 +1,57 @@
 .mastodon-section {
-    height:100%;
-    border-radius: 24px;
-    background: white;
+  height: 100%;
+  border-radius: 24px;
+  padding: 16px 16px 16px 0px;
+  background: var(--overlay-60-color);
 }
 
-.mt-container {
-    border-radius: 24px;
-    margin-right: 24px;
+#mt-container.mt-container {
+  background-color: transparent;
+  scrollbar-color: var(--overlay-dark-30-color) var(--overlay-60-color);
 }
+
 
 .mt-body {
-    height: 40vh;
+  height: 40vh;
+}
+
+article.mt-post {
+    border-bottom: 1px solid var(--base-30-color);
+}
+
+article.mt-post:hover {
+    background-color: var(--overlay-dark-10-color);
 }
 
 .mt-post-header-user {
-    line-height: 140%;
+  line-height: 140%;
+}
+
+.mt-post-header-user-name {
+    color: var(--base-90-color);
+}
+
+span.mt-post-header-user-account {
+    color: var(--base-80-color);
 }
 
 .mt-post-header-date time {
-    font-size: 14px;
+  font-size: 14px;
+  color: var(--base-80-color);
+}
+
+div.mt-post-text {
+    color: var(--base-90-color); 
 }
 
 .mt-post-txt-wrapper p {
-    margin: 0;
-    line-height: 150%;
+  margin: 0;
+  line-height: 140%;
 }
 
-.mt-post-counter-bar-replies {
-    font-size: 20px;
+div.mt-post-counter-bar-favorites,
+div.mt-post-counter-bar-reblog,
+div.mt-post-counter-bar-replies {
+  font-size: 1rem;
+  color: var(--base-80-color);
 }
