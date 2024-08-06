@@ -7,12 +7,13 @@
 
 #mt-container.mt-container {
   background-color: transparent;
-  scrollbar-color: var(--overlay-dark-30-color) var(--overlay-60-color);
+  scrollbar-color: var(--overlay-dark-30-color) var(--overlay-dark-10-color);
 }
 
 
-.mt-body {
+div.mt-body {
   height: 40vh;
+  padding: 0px 16px 16px 16px;
 }
 
 article.mt-post {

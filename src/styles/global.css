@@ -16,8 +16,9 @@
     --base-90-color: #141818;
     --overlay-30-color: rgba(255, 255, 255, 0.3);
     --overlay-60-color: rgba(255, 255, 255, 0.6);
-    --overlay-dark-10-color: rgba(20,24,24, 0.1);
-    --overlay-dark-30-color: rgba(20,24,24, 0.3);
+    --overlay-dark-10-color: rgba(19, 89, 89, 0.1);
+    --overlay-dark-30-color: rgba(19,89,89, 0.3);
+    --transparent-color: rgba(255, 255, 255, 0);
     
 }
 
@@ -47,6 +48,8 @@ h1 {
 h2 {
     padding: 0;
     margin: 24px 0;
+
+    line-height:130%;
 }
 
 p {

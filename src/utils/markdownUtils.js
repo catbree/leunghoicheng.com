@@ -11,7 +11,11 @@ const workEntries = {
   "message-board-project": () => import("../entries/message-board-project.md"),
   "upcoming-passion-project": () =>
     import("../entries/upcoming-passion-project.md"),
+  "contentious-fifth-project": () =>
+    import("../entries/contentious-fifth-project.md"),
 };
+
+const featuredWorkEntry = "a-fake-case-study-greenview";
 
 //Process a single markdown entry to get its frontmatter and content
 export const fetchMarkdownEntry = (slug) => {
@@ -27,22 +31,29 @@ export const fetchMarkdownEntry = (slug) => {
       const { content, data } = matter(text);
       const { toc, contentWithToc } = generateToc(content);
       return { contentWithToc, frontMatter: data, toc };
+    })
+    .catch((error) => {
+      console.error(`Error fetching markdown entry for slug "${slug}":`, error);
+      return null;
     });
 };
 
 //Fetch all markdown entries
 export const fetchAllMarkdownEntries = () => {
-    const entries = Object.keys(workEntries);
-    return Promise.all(
-      entries.map((slug) =>
-        fetchMarkdownEntry(slug).then(({ frontMatter }) => ({
-          slug,
-          ...frontMatter,
-        }))
-      )
-    );
-  };
+  const entries = Object.keys(workEntries);
+  return Promise.all(
+    entries.map((slug) =>
+      fetchMarkdownEntry(slug).then(({ frontMatter }) => ({
+        ...frontMatter,
+      }))
+    )
+  );
+};
 
+//Fetch featured entry
+export const fetchFeaturedWorkEntry = () => {
+  return fetchMarkdownEntry(featuredWorkEntry);
+};
 
 //Generate table of content if [[toc]] available in md
 const generateToc = (markdown) => {

@@ -4,7 +4,7 @@ slug: /case-study-portfolio-website-2024
 date: 30/06/2024
 description: "A cool description of some sorts"
 tags: productdesign webdevelopment casestudy
-post_image: "../assets/entryAssets/case-study-greenview-thumbnail.jpg"
+imageUrl: "/assets/entryAssets/1-thumbnail.jpg"
 ---
 
 # This is awesome
