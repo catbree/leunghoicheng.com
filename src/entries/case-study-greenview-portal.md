@@ -178,14 +178,16 @@ But in summary, while it worked well for the initial phases, we faced challenges
 
 To address this, we transitioned to a 3-month agile cycle with periodic re-evaluation of overall goals. This approach combines agile with some elements of waterfall, allowing for initial planning while still adapting and updating as needed.
 
-![Sample timeline](../assets/entryAssets/case-study-greenview-thumbnail.jpg)
-
-
 "In general, this outlines the rough process we followed for designing a feature. Here are some highlights of other features we developed over the three years. We rinse and repeat, continually refining our product and making it better over time.
 
-![Sample timeline](../assets/entryAssets/case-study-greenview-thumbnail.jpg)
-![Sample timeline](../assets/entryAssets/case-study-greenview-thumbnail.jpg)
-![Sample timeline](../assets/entryAssets/case-study-greenview-thumbnail.jpg)
+![Inputted environmental data records are listed in all record section, this powers alot of insights in the Portal](../assets/entryAssets/greenview-portal-9.png)
+*Inputted environmental data records are listed in all record section, this powers alot of insights in the Portal*
+
+![Best Practices](../assets/entryAssets/greenview-portal-10.png)
+*Best Practice are industry standard practices collected by Greenview, this is a self-check by hotels to evaluate if they're following the typical hotel standards. Serves as great knowledge. Answer this questions to get an understanding of where you stand!*
+
+![Environmental Metrics ](../assets/entryAssets/greenview-portal-11.png)
+*For users to see what data was put into the portal with specific metrics so they can quickly know at a glance what the numbers are.*
 
 
 ## Reflection
