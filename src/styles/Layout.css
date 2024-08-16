@@ -48,16 +48,24 @@ nav {
 .nav-links, .mode-options {
     margin: 0;
     padding: 0;
+    
     display: flex;
     gap: 32px;
     list-style: none;
+
 }
 
 .nav-links li a, #mode-toggle {
+
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
     text-decoration: none;
     color: var(--primary-color);
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+}
+
+.nav-links li a:hover, #mode-toggle:hover {
+    border-bottom: 3px solid var(--primary-color);
 }

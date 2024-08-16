@@ -4,8 +4,8 @@ import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
 const workEntries = {
-  "a-fake-case-study-greenview": () =>
-    import("../entries/a-fake-case-study-greenview.md"),
+  "case-study-greenview-portal": () =>
+    import("../entries/case-study-greenview-portal.md"),
   "case-study-portfolio-website-2024": () =>
     import("../entries/case-study-portfolio-website-2024.md"),
   "message-board-project": () => import("../entries/message-board-project.md"),
@@ -15,7 +15,7 @@ const workEntries = {
     import("../entries/contentious-fifth-project.md"),
 };
 
-const featuredWorkEntry = "a-fake-case-study-greenview";
+const featuredWorkEntry = "case-study-greenview-portal";
 
 //Process a single markdown entry to get its frontmatter and content
 export const fetchMarkdownEntry = (slug) => {
@@ -57,13 +57,16 @@ export const fetchFeaturedWorkEntry = () => {
 
 //Generate table of content if [[toc]] available in md
 const generateToc = (markdown) => {
-  const md = new MarkdownIt()
+  const md = new MarkdownIt({
+    html: true,
+  })
     .use(anchor, {
       level: [1, 2],
       permalink: false,
     })
     .use(Toc, {
       listType: "ul",
+      level: [1, 2],
       containerClass: "toc",
     });
 

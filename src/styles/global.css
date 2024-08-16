@@ -79,3 +79,11 @@ hr {
 
     border-color: var(--base-00-color);
 }
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    border-bottom: 3px solid var(--primary-color);
+}

@@ -40,7 +40,9 @@ function Header() {
         </li>
       </ul>
       <ul className="mode-options">
-        <button id="mode-toggle">MODE</button>
+        <li>
+          <a id="mode-toggle">Mode</a>
+        </li>
       </ul>
     </nav>
   );
