@@ -3,6 +3,7 @@
   border-radius: 24px;
   padding: 16px 16px 24px 0px;
   background: var(--overlay-60-color);
+
 }
 
 #mt-container.mt-container {
@@ -12,7 +13,7 @@
 
 
 div.mt-body {
-  height: 80vh;
+  height: 50vh;
   padding: 0px 16px 16px 16px;
 }
 
