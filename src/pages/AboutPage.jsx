@@ -4,7 +4,7 @@ import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
-import { StandardContainer } from "../components/Layout";
+import { ContentContainer } from "../components/Layout";
 import ContentNavSection from "../components/ContentNavSection";
 import MainContentSection from "../components/MainContentSection";
 import ImageContentSection from "../components/ImageContentSection";
@@ -68,7 +68,7 @@ function AboutPage() {
   });
 
   return (
-    <StandardContainer
+    <ContentContainer
       leftColumn={
         <MainContentSection
           content={contentwithToc}

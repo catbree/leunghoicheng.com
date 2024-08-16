@@ -18,8 +18,7 @@ We had our work cut out for us: To rebuild Greenview Portal from the ground up, 
 ## Existing Challenges
 Initially, a full-scale redesign of Greenview Portal wasn't in the plan, but after speaking with users, stakeholders, and subject matter experts, it became clear that the system had some critical flaws.
 
-![Taken from a Green Key newsletter in 2018, collated snapshots of Greenview Portal and some of their features](/assets/entryAssets/greenview-portal-1.png)
-*A collated snapshot of Greenview Portal captured in its prior glory from a Green Key newsletter in 2018*
+![Taken from a Green Key newsletter in 2018, collated snapshots of Greenview Portal and some of their features](/assets/entryAssets/greenview-portal-1.png) *A collated snapshot of Greenview Portal captured in its prior glory from a Green Key newsletter in 2018*
 
 For starters, the system was designed with single-property users in mind, but that's not how the hotel industry works. Many users manage multiple hotels, and the system’s shortcomings forced them into frustrating workarounds that led to major inefficiencies.
 
@@ -29,7 +28,7 @@ And finally the routine tasks. From entering data or generating reports, these a
 
 After discussions with Greenview, it was decided that Greenview Portal needed a complete overhaul rather than just a few minor tweaks.
 
-## Feature Development: Bulk Input of Data Records
+## Walkthrough of design process
 Over the three years I worked on this project, our team tackled numerous features and issues. Among the many challenges, the bulk input of data records stood out. It was a major pain point for our users and was one of the first features we developed. We aimed to transform this clunky process into a streamlined solution that users would actually enjoy using.
 
 ### 1. Research & Discovery
@@ -78,12 +77,10 @@ Here’s some key learnings from this phase:
 ### 6. Product specification
 With the design finalized, we moved into the specification phase. We compiled a comprehensive product requirement document that consolidated all insights and decisions. This document guided the development team through drafting JIRA tickets with clear acceptance criteria. It also included detailed product specification screens to ensure clarity on what needed to be built.
 
-Here’s a look at the final result in action:
 <video controls>
   <source src="../assets/entryAssets/greenview-portal-8.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
 *Video of how it actually works in action*
 
 ### Other features

@@ -10,5 +10,3 @@ imageUrl: "/assets/entryAssets/1-thumbnail.jpg"
 # This is awesome
 
 This portfolio website is an opinionated web dev build tool that serves your code via native ES Module imports during dev and bundles it with Rollup for production.
-
-![green plant](../assets/entryAssets/case-study-greenview-thumbnail.jpg)

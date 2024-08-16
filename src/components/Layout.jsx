@@ -17,7 +17,19 @@ function StandardContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container standard">
       <Header />
-      <div className="column-grid">
+      <div className="column-grid reversed-grid">
+        <div className="left-column">{leftColumn}</div>
+        <div className="right-column">{rightColumn}</div>
+      </div>
+    </div>
+  );
+}
+
+function ContentContainer({ leftColumn, rightColumn }) {
+  return (
+    <div className="container standard">
+      <Header />
+      <div className="column-grid content-heavy-grid">
         <div className="left-column">{leftColumn}</div>
         <div className="right-column">{rightColumn}</div>
       </div>
@@ -48,7 +60,7 @@ function Header() {
   );
 }
 
-export { FullScreenContainer, StandardContainer };
+export { FullScreenContainer, StandardContainer, ContentContainer };
 
 // Defining prop types for validation
 

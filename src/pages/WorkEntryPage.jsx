@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { StandardContainer } from "../components/Layout";
+import { ContentContainer } from "../components/Layout";
 import ContentNavSection from "../components/ContentNavSection";
 import MainContentSection from "../components/MainContentSection";
 import ImageContentSection from "../components/ImageContentSection";
@@ -31,7 +31,7 @@ function WorkEntryPage() {
   if (error) return <div>{error}</div>;
 
   return (
-    <StandardContainer
+    <ContentContainer
       leftColumn={
         <MainContentSection
           content={contentwithToc}
