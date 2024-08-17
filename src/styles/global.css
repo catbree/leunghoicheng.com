@@ -27,7 +27,7 @@ body {
 
   font-family: "Lexend", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 180%;
 
   background-color: var(--base-30-color);
@@ -89,10 +89,14 @@ figure {
   margin: 24px 0;
 }
 
+a {
+  color: var(--primary-color);
+}
+
 @media (max-width: 640px) {
   body {
     font-size: 14px;
-    line-height: 180%;
+    line-height: 200%;
   }
 
   h1 {
@@ -107,8 +111,14 @@ figure {
     padding: 0;
     margin: 16px 0;
 
-    font-size: 21px;
+    font-size: 19px;
   
+  }
+
+  h3 {
+    padding: 0;
+    margin: 16px 0;
+    font-size: 16px;
   }
 
   ul {

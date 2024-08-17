@@ -14,6 +14,7 @@ export default function MastodonSection() {
     btnSeeMore: "",
     btnReload: "",
     defaultTheme: "light",
+    hideReplies: true,
   });
 
   return (

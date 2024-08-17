@@ -51,11 +51,11 @@ function Header() {
           <a href="/about">About</a>
         </li>
       </ul>
-      <ul className="mode-options">
+      {/* <ul className="mode-options">
         <li>
           <a id="mode-toggle">Mode</a>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }

@@ -37,9 +37,14 @@ span.mt-post-header-user-account {
     color: var(--base-80-color);
 }
 
+.mt-post-header-date {
+  flex-shrink: 0;
+}
+
 .mt-post-header-date time {
   font-size: 14px;
   color: var(--base-80-color);
+  line-height: 100%;
 }
 
 div.mt-post-text {
@@ -51,9 +56,14 @@ div.mt-post-text {
   line-height: 140%;
 }
 
+.mt-post-txt-wrapper a.u-url.mention {
+  color: var(--primary-color);
+}
+
 div.mt-post-counter-bar-favorites,
 div.mt-post-counter-bar-reblog,
 div.mt-post-counter-bar-replies {
   font-size: 1rem;
   color: var(--base-80-color);
 }
+

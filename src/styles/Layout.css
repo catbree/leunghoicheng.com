@@ -66,6 +66,23 @@
     .reversed-grid > .left-column {
         order: 2;
     }
+
+    nav {
+        padding: 8px 24px;
+        background-color: var(--overlay-30-color);
+        align-items: center;
+        border-radius: 24px;
+    }
+    
+    .nav-links, .mode-options {
+        margin: 0;
+        padding: 0;
+        
+        display: flex;
+        gap: 24px;
+        list-style: none;
+    
+    }
 }
 
 /* --Navigation Styling-- */
