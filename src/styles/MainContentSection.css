@@ -30,6 +30,10 @@
   margin-top: 64px;
 }
 
+.main-content-container h3 {
+  margin-top: 40px;
+}
+
 .main-content-container ul {
   padding: 0 0 0 24px;
   box-sizing: border-box;

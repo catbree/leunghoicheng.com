@@ -4,15 +4,11 @@ import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
 const workEntries = {
-  "case-study-greenview-portal": () =>
-    import("../entries/case-study-greenview-portal.md"),
   "case-study-portfolio-website-2024": () =>
     import("../entries/case-study-portfolio-website-2024.md"),
-  "message-board-project": () => import("../entries/message-board-project.md"),
-  "upcoming-passion-project": () =>
-    import("../entries/upcoming-passion-project.md"),
-  "contentious-fifth-project": () =>
-    import("../entries/contentious-fifth-project.md"),
+  "case-study-greenview-portal": () =>
+    import("../entries/case-study-greenview-portal.md"),
+  "paw-haven": () => import("../entries/paw-haven.md"),
 };
 
 const featuredWorkEntry = "case-study-greenview-portal";

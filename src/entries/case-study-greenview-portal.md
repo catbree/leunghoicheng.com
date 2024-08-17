@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Greenview Portal"
 slug: /case-study-greenview-portal
-date: 30th December 2024
+date: 30 Dec 2023
 description: "An enterprise webapp that helps hotel chains manage their sustainability data and efforts"
 tags: productdesign casestudy
 imageUrl: "/assets/entryAssets/greenview-portal-thumbnail.png"
