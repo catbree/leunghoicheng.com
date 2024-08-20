@@ -9,27 +9,10 @@
   height: 100%;
   background: linear-gradient(to bottom, #a2b29f 50%, #494949 50%);
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 }
 
-.sprite {
+.sprite img{
   width: 100%;
-  padding-top: 67%;
-  background-image: url("/assets/hero-splash-darker-bg.png");
-  background-position: 0 0;
-  background-size: 1800% 100%;
-  animation: cycle 5s steps(18) infinite;
-  margin: 0 auto;
-
-  will-change: background-position;
-}
-
-@keyframes cycle {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -1800% 0;
-  }
 }
