@@ -1,6 +1,5 @@
 .content-nav-section {
     height: 100%;
-
 }
 
 .nav-container {
@@ -12,4 +11,7 @@
 
     position: sticky;
     top: 16px;
+
+    font-size: 18px;
+
 }
