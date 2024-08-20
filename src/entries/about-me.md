@@ -5,76 +5,37 @@ date: 3rd August 2024
 imageUrl: "/assets/entryAssets/case-study-greenview-thumbnail.jpg"
 ---
 
-Hello, I'm Hoi Cheng, a 27-year-old Product Designer from Singapore. I find joy in helping people make sense of today's technology by creating comfortable and easy-to-use experences.
-
-I've dabbled in a bunch of things, fuelled by my personal curiosity. This has been so impactful for me to learn new things and acquire knowledges across disciplines. I have a intrinsic want to build the things I design, which led me to pick up web development at my own time.
+[[toc]]
 
 ---
 
-## How I've been spending my time
+##  Introduction
+Hello, I'm Hoi Cheng, a Product Designer from Singapore.
 
-2024 (as of now)
-- Created Cool Side Project 1
-- Created my own personal portfolio website
-- Started on The Odin Project, an open-source coding curriculum for web development, to turn my ideas into reality
+I discovered about product design when I first took a course on game design during university. Inspired by my professor’s passion for storytelling and learning the power of interactivity, it didn’t take long for me to see the potential of product design as a way to reach people and help them navigate life through the software tools they use.
 
-2021 - 2023
-- Product Designer in a tech consultancy, A Better Consultancy, and led the design of Greenview Portal, a hotel sustainability management platform, for three years
+I find joy in helping people make sense of things by creating experiences that are comfortable and easy to use. No one should feel left behind just because technology isn’t intuitive.
 
-2020
-- Graduated from university in the midst of a global pandemic lockdown
+## My First Professional Experience
+After graduation, I began my career at a tech consultancy working on Greenview Portal, a tool used by hotel staff who aren’t tech enthusiasts. I loved making their work easier. I stayed there from early 2019 to the end of 2023, leading design from end to end and learning from both successes and failures.
 
----
+## Learning to code
+While I was working on Greenview Portal, programming was always a mysterious black box. After three years of relying on others to bring my designs to life, I wanted to unlock that black box myself. So, I started looking into web development through The Odin Project, learning just enough to create, build, and test my ideas.
 
-## Product Design
+This led me to check off a big item on my bucket list: owning my personal space on the internet by building my own portfolio website from scratch. You're looking at it right now.
 
-Skills:
-- Qualitative analysis
-- Requirement gathering
-- Information architecture
-- User interface design
-- Wireframing and Prototyping
-- Product requirement definition
-- User acceptance testing
-- Asset creation
+## Life beyond the screen
+Outside of work, I relax by being active outdoors, surrounded by nature, animals, and the people I love. 
 
-Tools:
-- Figma
-- Pen and paper
-- Whatever’s necessary for the job at hand
+When I have more time, I take it to go on adventures. This year, I climbed outdoors in Kuala Lumpur’s Batu Caves, swam into a fish cave in Siquijor, and saw my first shark during a night dive in Tioman.
 
----
+I'm looking forward to climbing the Jade Mountain in Taiwan this October.
 
-## Web Development
+## Contact Me
+I’m still figuring things out, but I’m certain that every step I take, whether in work or play, is leading me closer to what I truly want in life. That makes me happy.
 
-Honestly moderate at best, still new and it’s always only just enough to put whatever I need at hand together. 
+Feel free to reach out. I'm always up for a chat about work, personal interests, or anything in between. 
 
-These are the technologies I’ve been using for my projects so far:
-- HTML
-- CSS
-- JavaScript
-- ReactJS
-- Express.js
-- Node.js
-- MongoDB
-- Pug
+My email is [hoichengleung@gmail.com](mailto:hoichengleung@gmail.com) and I update my life on Mastodon [@catbree@sunny.garden](https://sunny.garden/@catbree).
 
----
-
-## Personal
-
-I have a bunch of interests fuelled by what's interesting to me at a given moment:
-- Gardening (Recreating my own urban version of Stardew Valley)
-- Running
-- Climbing
-- Diving
-- Animals
-- Pixel art
-- Cooking
-
-Fuelled by:
-- Oat milk matcha latte
-- Sun
-- Reese's chocolate (especially when coding)
-- Protein bars for breakfas
 

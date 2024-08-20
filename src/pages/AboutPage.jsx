@@ -24,7 +24,7 @@ const generateTOC = (markdown) => {
     });
 
   // Render the markdown to HTML, needs a [[TOC]] placeholder for it to work
-  const contentWithToc = md.render(`[[toc]]${markdown}`);
+  const contentWithToc = md.render(`${markdown}`);
   // Create a temporary DOM element and set its innerHTML
   const tempDiv = document.createElement("div");
   tempDiv.innerHTML = contentWithToc;
