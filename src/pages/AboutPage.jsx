@@ -13,13 +13,16 @@ const aboutMeEntry = () => import("../entries/about-me.md");
 
 // Generate TOC
 const generateTOC = (markdown) => {
-  const md = new MarkdownIt()
+  const md = new MarkdownIt({
+    html: true,
+  })
     .use(anchor, {
       level: [1, 2],
       permalink: false,
     })
     .use(Toc, {
       listType: "ul",
+      level: [1, 2],
       containerClass: "toc",
     });
 

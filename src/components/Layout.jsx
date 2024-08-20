@@ -4,6 +4,7 @@ import "../styles/Layout.css";
 function FullScreenContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container full-screen">
+      <div className="background-layer"></div>
       <Header />
       <div className="column-grid">
         <div className="left-column">{leftColumn}</div>
@@ -16,6 +17,7 @@ function FullScreenContainer({ leftColumn, rightColumn }) {
 function StandardContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container standard">
+      <div className="background-layer"></div>
       <Header />
       <div className="column-grid reversed-grid">
         <div className="left-column">{leftColumn}</div>
@@ -28,6 +30,7 @@ function StandardContainer({ leftColumn, rightColumn }) {
 function ContentContainer({ leftColumn, rightColumn }) {
   return (
     <div className="container standard">
+      <div className="background-layer"></div>
       <Header />
       <div className="column-grid content-heavy-grid">
         <div className="left-column">{leftColumn}</div>
@@ -42,13 +45,13 @@ function Header() {
     <nav>
       <ul className="nav-links">
         <li>
-          <a href="/">LHC</a>
+          <a href="/" id="LHC">LHC</a>
         </li>
         <li>
-          <a href="/work">Work</a>
+          <a href="/work">WORK</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="/about">ABOUT</a>
         </li>
       </ul>
       {/* <ul className="mode-options">
