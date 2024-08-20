@@ -41,7 +41,6 @@
     background-image: url("assets/background-grain.png");
     opacity: 1;
     z-index: 1;
-    background-size: cover;
 }
 
 .background-layer::after {
@@ -52,7 +51,6 @@
     background-image: url("assets/background-pattern.png");
     opacity: 0.2;
     z-index: 2;
-    background-size: cover;
 }
 
 .left-column, .right-column {
