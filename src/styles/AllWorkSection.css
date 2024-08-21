@@ -14,11 +14,11 @@
     align-items: center;
     padding: 24px;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 .work-item-container h2{
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
 }
 
 .work-item-container:last-of-type {
@@ -27,12 +27,12 @@
 
 .work-item-container:hover {
     background-color: var(--overlay-dark-10-color);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 .work-item-container:hover h2 {
     color: var(--primary-color);
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
 }
 
 .image-container {
