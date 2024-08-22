@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Portfolio Website 2024"
 slug: /case-study-portfolio-website-2024
-date: 21 Aug 2024
+date: 22 Aug 2024
 description: "My personal portfolio website built with React and Vite."
 tags: productdesign webdevelopment casestudy
 imageUrl: "/assets/entryAssets/portfolio-website-2024-thumbnail.png"
@@ -12,34 +12,33 @@ imageUrl: "/assets/entryAssets/portfolio-website-2024-thumbnail.png"
 ---
 
 ## Introduction
-I’ve always wanted my own portfolio website, and now I’ve finally brought it to life. The best part? Complete freedom to do what feels just right. This website isn’t just a portfolio. It’s my internet home, where I can showcase my work and share what I’m up to.
+I’ve always wanted to have a portfolio website, and now I’ve finally brought it to life. The best part? Complete freedom to do what feels just right. This website isn’t just a portfolio. It’s my internet home, where I can showcase my work and share what I’m up to.
 
 ## Conceptual Design
-I envisioned a space that feels warm, cozy, and personal. Here’s a look at the images from my original moodboard.
-
+I envisioned a space that feels warm, cozy, and personal. Here’s a look at the images from my original mood board.
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-1.png" alt="four images that evoke a different segment of what I want the portfolio to feel">
-  <em>Moodboard / Image compilation</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-1.png" alt="A collage of four images. The top left is a glass greenhouse amidst greenery. There is a cloudy sky behind it and a stone pavement leading up to it. On the top right, there is a brown and white cat with some black patches. It sits on a stone pavement with a background of wilted brown grass behind it. The bottom right shows a room with dark moss green walls, and a full-length window on the side overlooking trees. The bottom right is a drawing inspired by a scene in Totoro, with a grassy green hill and blue cloudy sky in the background.In the foreground, there are a few sunflowers.">
+  <em>Some images on my mood board</em>
 </figure>
 
 I started with sketches on paper to map out the structure. The website would be straightforward: a homepage for showcasing my recent activities, a work section for hiring managers, and a simple about me section.
 
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-2.jpg" alt="sketches on paper">
-  <em>Original sketches</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-2.jpg" alt="Sketches and notes made in blue ink on paper. There are a bunch of boxes and arrows that denote different pages on the website. As well as scribbles below it of thoughts scattered around.">
+  <em>Initial sketches and notes done quickly on paper. I've got a ton of these!</em>
 </figure>
 
-After many more sketches, I felt ready to move onto Figma and mock up a page reference. Experimenting with various UI elements, I found a combination that worked for me and started coding.
+After many more sketches, I was ready to move onto Figma and mock up a page reference. I spent some time experimenting with colors, layouts, and various UI elements. This combination seemed to work for me and I got right down to coding.
 
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-4.png" alt="Mock reference">
-  <em>Mock reference of website</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-4.png" alt="A screenshot of a static page on Figma. There was a top navigation with these options: LHC, Work, About, and MODE. Below it, there are two columns. The main column on the left showed the work entry content. While the column on the right had an image. Below it, there was a table of contents with the first header bolded. Below that was a CTA button is dark green. The page had a light brown with a slight green tinge.">
+  <em>Mock reference of the work entry page in Figma along with some experimental elements</em>
 </figure>
 
 ## Executing the idea
-Building this website from scratch using the skills I gained through The Odin Project (TOP) was a natural step. It allows me to apply what I've learned and bring my ideas of life.
+Building this website from scratch using the skills I gained through The Odin Project (TOP) was a natural step. It allows me to apply what I’ve learned and bring my ideas to life.
 
-I used React with Vite bceause this is what I'm most comfortable with right now. I set up routing with `react-router-dom`. A quick look at my configuration:
+I used React with Vite because this is what I’m most comfortable with right now. I set up routing with `react-router-dom`. A quick look at my configuration:
 
 
 ```
@@ -69,12 +68,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-Next I added some dummy pages and now I have a working base to build my sections on. Let's keep going.
+Next, I added some dummy pages and now I have a working base to build my sections on. Let’s keep going.
 
 ### Work Entry Page
-I went with writing my content in markdown because it was easy to write with and saves me from wrestling with HTML everytime I wrote a new entry for my website. I thought I could just slap my markdown file into the project and everything would work perfectly. Spoiler alert: it didn't quite turn out that way. 
+I went with writing my content in markdown because it was easy to write with and saves me from wrestling with HTML every time I wrote a new entry for my website. I thought I could just slap my markdown file into the project and everything would work perfectly. Spoiler alert: it didn’t quite turn out that way.
 
-By default, react doesn't handle `.md` files on its own, so I added a line that tells Vite to treat markdown files as assets in `vite.config.js`:
+By default, React doesn't handle `.md` files on its own, so I added a line that tells Vite to treat markdown files as assets in `vite.config.js`:
 
 ```
 export default defineConfig({
@@ -146,42 +145,39 @@ export const fetchMarkdownEntry = (slug) => {
 Yay, no need to waste time on manual TOC updates. Here's how it looked like when I was experimenting it with test data.
 
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-7.png" alt="Insert alt text here">
-  <em>Insert caption here</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-7.png" alt="A screenshot of a webpage. There is a top navigation with these options: LHC, Work, About, and MODE. Below it, there are two columns. The main column on the left showes the work entry content. There is a table of content right below it, followed by the content itself. The column on the right had an image. Below it, there was a table of contents.">
+  <em>A screenshot of the work entry page in the midst of work in progress</em>
 </figure>
 
 ### An experiment with sprites
-For the homepage, I wanted to add a personal and fun touch, so I threw together some quick pixel art featuring my late family cat. It was meant to be just a placeholder, but as I worked on the site, the art grew on me, so I decided to keep it.
+For the homepage, I wanted to add a personal and fun touch, so I threw together some quick pixel art featuring my late family cat. Originally a placeholder, the art grew on me as I continued with the project. In the end, I kept it.
 
 <figure>
-  <img src="../assets/hero-section-animation.gif" alt="Insert alt text here">
-  <em>Insert caption here</em>
+  <img src="../assets/hero-section-animation.gif" alt="Animation featuring a large centered title that reads 'Hoi Cheng Product Designer,' with a black cat sitting on the letter G. The title is displayed above a pavement with grass. There are two clouds in the background.">
+  <em>The animation that is on my front page. The cat’s name is 小白 (Little White).</em>
 </figure>
 
-I explored sprite animations and learned that sprites are basically a sequence of images with some CSS magic to make them move. Initially, I tried scaling the art to fit the div, which involved a lot of fiddling like setting padding-top based on aspect ratio and blending edges with a gradient. It worked largely okay, but had issues like blurriness and an odd behavour of disappearing at the end of each cycle. I wasn't able to work out some of these issues so I ended up converting the sprite into a GIF and it worked like a charm.
+I explored sprite animations and learned that sprites are basically a sequence of images with some CSS magic to make them move. Initially, I tried scaling the art to fit the div, which involved a lot of fiddling like setting padding-top based on aspect ratio and blending edges with a gradient. It worked largely okay, but had issues like blurriness and an odd behavior of disappearing at the end of each cycle. I wasn’t able to work out some of these issues, so I ended up converting the sprite into a GIF and it worked like a charm.
 
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-9.png" alt="Insert alt text here">
-  <em>Sprite sheet I was experimenting with</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-9.png" alt="A sprite sheet of 18 steps that make up the front page animation which later turned into a gif">
+  <em>The experimental sprite sheet I was working on which has 18 steps</em>
 </figure>
 
 I'd like to explore sprites further, but next time, I plan to use SVG format instead. It seems like a better option for managing scale, which was the biggest challenge I faced with this part of the project.
 
 
 ### Mastodon
-To showcase an active update of what I'm up to on my homepage, I originally intended to create a Twitter/X account so that I can embed my feed. But given the direction it was going, I wasn't very keen and started looking for alternatives instead. The concept of fediverse appeals to me and I decided to create an account on Mastodon instead. I appreciate having data ownership and being able to curate what I see.
+To showcase an active update of what I’m up to on my homepage, I originally intended to create a Twitter/X account so that I can embed my feed. But given the direction it was going, I wasn’t very keen and started looking for alternatives instead. The concept of the Fediverse appeals to me and I created an account on Mastodon instead. I appreciate having data ownership and being able to curate what I see.
 
 To embed my feed, I found [Mastodon Embed Timeline](https://gitlab.com/idotj/mastodon-embed-timeline) which allowed me to freely customise its CSS. I spent some time here experimenting with the styles, with the end result looking something like this:
 
 <figure>
-  <img src="../assets/entryAssets/portfolio-website-2024-8.png" alt="Insert alt text here">
-  <em>Insert caption here</em>
+  <img src="../assets/entryAssets/portfolio-website-2024-8.png" alt="A screenshot of a homepage. There is a top navigation. The page is split into two columns, the left column had an image and a text which said 'Hoi Cheng Product Designer', and the right was an embedded scrollable list of the latest feed from a Mastodon profile by the name of Hoi Cheng with a handle called @catbree@sunny.garden">
+  <em>A screenshot of the homepage in the midst of work in progress</em>
 </figure>
 
-## Awaiting feedback
-At this point, I decided to press on and wrap up my case studies. I've been working on this solo for a while, and now I’m at the stage where I’m ready to get feedback from trusted peers. I’m eager to hear their thoughts and refine everything further.
+## Currently awaiting feedback
+Right now, I finished up writing my case studies and feel that I am at a good stop. I’m currently at the stage of feedback collection from my trusted peers. I’m eager to hear their thoughts so that I can refine my website further. 
 
-Stay tuned! This section will be updated as I continue to work on it.
-
-## Reflection
-Dream come true. Excited. Looking forward to what else to come.
+Stay tuned! I will update this article as I’m continuing to work on it.
