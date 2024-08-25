@@ -150,6 +150,11 @@ a#LHC {
 
 @media (max-width: 640px) {
   nav {
-    padding: 12px 24px;
+    padding: 8px 24px;
+  }
+
+  .nav-links li a,
+  #mode-toggle {
+    font-size: 0.8rem;
   }
 }
