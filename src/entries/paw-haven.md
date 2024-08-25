@@ -1,8 +1,8 @@
 ---
-title: "Paw Haven - Revamping Pet Adoption Galleries"
+title: "Revamping Pet Adoption Galleries"
 slug: /paw-haven
 date: 6 Jun 2023
-description: "A UI exploration seeking to improve outdated pet adoption galleries in Singapore"
+description: "A UI exploration to improve outdated pet adoption galleries in Singapore"
 tags: uidesign
 imageUrl: "/assets/entryAssets/paw-haven-thumbnail.png"
 ---

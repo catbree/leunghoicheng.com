@@ -6,7 +6,7 @@ function FullScreenContainer({ leftColumn, rightColumn }) {
     <div className="container full-screen">
       <div className="background-layer"></div>
       <Header />
-      <div className="column-grid">
+      <div className="column-grid home">
         <div className="left-column">{leftColumn}</div>
         <div className="right-column">{rightColumn}</div>
       </div>
