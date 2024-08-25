@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -31,23 +33,33 @@ function WorkEntryPage() {
   if (error) return <div>{error}</div>;
 
   return (
-    <ContentContainer
-      leftColumn={
-        <MainContentSection
-          content={contentwithToc}
-          date={frontMatter?.date || ""}
-          title={frontMatter?.title || ""}
+    <>
+      <Helmet>
+        <title>{frontMatter?.title || ""} | Leung Hoi Cheng</title>
+        <meta
+          name="description"
+          content={frontMatter?.description || ""}
         />
-      }
-      rightColumn={
-        <>
-          <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
-          <ContentNavSection>
-            <div dangerouslySetInnerHTML={{ __html: toc }} />
-          </ContentNavSection>
-        </>
-      }
-    />
+        <meta property="og:image" content={frontMatter?.imageUrl || ""}></meta>
+      </Helmet>
+      <ContentContainer
+        leftColumn={
+          <MainContentSection
+            content={contentwithToc}
+            date={frontMatter?.date || ""}
+            title={frontMatter?.title || ""}
+          />
+        }
+        rightColumn={
+          <>
+            <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
+            <ContentNavSection>
+              <div dangerouslySetInnerHTML={{ __html: toc }} />
+            </ContentNavSection>
+          </>
+        }
+      />
+    </>
   );
 }
 

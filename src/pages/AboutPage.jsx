@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { useState, useEffect } from "react";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
@@ -71,23 +73,32 @@ function AboutPage() {
   });
 
   return (
-    <ContentContainer
-      leftColumn={
-        <MainContentSection
-          content={contentwithToc}
-          date={frontMatter?.date || ""}
-          title={frontMatter?.title || ""}
+    <>
+      <Helmet>
+        <title>About | Leung Hoi Cheng</title>
+        <meta
+          name="description"
+          content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
         />
-      }
-      rightColumn={
-        <>
-          <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
-          <ContentNavSection>
-            <div dangerouslySetInnerHTML={{ __html: toc }} />
-          </ContentNavSection>
-        </>
-      }
-    />
+      </Helmet>
+      <ContentContainer
+        leftColumn={
+          <MainContentSection
+            content={contentwithToc}
+            date={frontMatter?.date || ""}
+            title={frontMatter?.title || ""}
+          />
+        }
+        rightColumn={
+          <>
+            <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
+            <ContentNavSection>
+              <div dangerouslySetInnerHTML={{ __html: toc }} />
+            </ContentNavSection>
+          </>
+        }
+      />
+    </>
   );
 }
 

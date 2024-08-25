@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { useState, useEffect } from "react";
 
 import { StandardContainer } from "../components/Layout";
@@ -39,19 +41,30 @@ function WorkPage() {
 
   if (error) return <div>{error}</div>;
   return (
-    <StandardContainer
-      leftColumn={
-        <>
-          <AllWorkSection workList={workList} />
-        </>
-      }
-      rightColumn={
-        <>
-          <HeaderLabelSection title="Featured" />
-          <FeaturedWorkSection featuredWorkFrontMatter={featuredWorkFrontMatter} />
-        </>
-      }
-    />
+    <>
+      <Helmet>
+        <title>Work | Leung Hoi Cheng</title>
+        <meta
+          name="description"
+          content="A collection of my recent work, primarily around product design and web development."
+        />
+      </Helmet>
+      <StandardContainer
+        leftColumn={
+          <>
+            <AllWorkSection workList={workList} />
+          </>
+        }
+        rightColumn={
+          <>
+            <HeaderLabelSection title="Featured" />
+            <FeaturedWorkSection
+              featuredWorkFrontMatter={featuredWorkFrontMatter}
+            />
+          </>
+        }
+      />
+    </>
   );
 }
 
