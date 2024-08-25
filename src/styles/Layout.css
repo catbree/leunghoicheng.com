@@ -90,7 +90,9 @@
     .column-grid,
     .column-grid.home {
         grid-template-columns: 1fr;
+        grid-template-rows: 35vh auto;
     }
+
     .reversed-grid > .right-column {
         order: 1;
     }
