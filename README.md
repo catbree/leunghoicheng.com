@@ -1,21 +1,19 @@
-# React + Vite
+# leunghoicheng.com
+Portfolio website of Leung Hoi Cheng. It is a fully custom-designed and built using React and Vite. Optimised for responsivess, it should work across all browsers and devices. It contains case studies of select projects.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run the site locally, start by cloning the repository:
+   ```bash
+   git clone https://github.com/your-username/leunghoicheng.com
+   ```
+Next, navigate to the repository:
+ ```bash
+   cd leunghoicheng.com
+   ```
+Once you're there, install the dependencies and start the server:
+ ```bash
+   npm install
+   npm run dev
+   ```
+Once the server has started, open your browser and visit http://localhost:3000 to view the site.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-main-bg: #D6D4B0
-primary: #135959
-overlay-30: #FFF, A:30
-
-nav
-border-radius: 24px;
-border: 16px 32px;
-gap between each nav: 32px;
-LHC Work About Mode
-
-
+Hmm, what else should I include here?
