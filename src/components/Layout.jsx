@@ -45,7 +45,7 @@ function Header() {
     <nav>
       <ul className="nav-links">
         <li>
-          <a href="/" id="LHC">LHC</a>
+          <a href="/" id="LHC">HOME</a>
         </li>
         <li>
           <a href="/work">WORK</a>

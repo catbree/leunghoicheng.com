@@ -12,7 +12,6 @@
 
 .full-screen {
     height: 100vh;
-
 }
 
 .column-grid {
@@ -83,13 +82,14 @@
 
 @media (max-width: 920px) {
     .column-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .column-grid {
         grid-template-columns: 1fr;
     }
-
-    .full-screen {
-        height: auto;
-    }
-
     .reversed-grid > .right-column {
         order: 1;
     }
