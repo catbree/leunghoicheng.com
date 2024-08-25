@@ -48,6 +48,15 @@ function WorkPage() {
           name="description"
           content="A collection of my recent work, primarily around product design and web development."
         />
+        <meta
+          property="og:description"
+          content="A collection of my recent work, primarily around product design and web development."
+        />
+        <meta
+          property="og:image"
+          content="https:leunghoicheng.com/assets/hero-section-animation.gif"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <StandardContainer
         leftColumn={

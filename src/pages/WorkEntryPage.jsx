@@ -36,11 +36,20 @@ function WorkEntryPage() {
     <>
       <Helmet>
         <title>{frontMatter?.title || ""} | Leung Hoi Cheng</title>
+        <meta name="description" content={frontMatter?.description || ""} />
         <meta
-          name="description"
+          property="og:description"
           content={frontMatter?.description || ""}
         />
-        <meta property="og:image" content={frontMatter?.imageUrl || ""}></meta>
+        <meta
+          property="og:image"
+          content={
+            frontMatter?.imageUrl
+              ? `https://leunghoicheng.com${frontMatter.imageUrl}`
+              : ""
+          }
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <ContentContainer
         leftColumn={

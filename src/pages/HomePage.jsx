@@ -8,10 +8,6 @@ import MastodonSection from "../components/MastodonSection";
 function HomePage() {
   return (
     <>
-      <Helmet>
-        <title>Leung Hoi Cheng</title>
-        <meta name="description" content="The internet home of Leung Hoi Cheng, a product designer from Singapore." />
-      </Helmet>
       <FullScreenContainer
         leftColumn={<HeroSection />}
         rightColumn={

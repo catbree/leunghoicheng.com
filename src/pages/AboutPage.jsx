@@ -80,6 +80,15 @@ function AboutPage() {
           name="description"
           content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
         />
+        <meta
+          property="og:description"
+          content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
+        />
+        <meta
+          property="og:image"
+          content="https:leunghoicheng.com/assets/hero-section-animation.gif"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <ContentContainer
         leftColumn={
