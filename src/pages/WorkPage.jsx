@@ -54,7 +54,7 @@ function WorkPage() {
         />
         <meta
           property="og:image"
-          content="https:leunghoicheng.com/assets/hero-section-animation.gif"
+          content="https://leunghoicheng.com/assets/hero-section-animation.gif"
         />
         <meta property="og:type" content="website" />
       </Helmet>
