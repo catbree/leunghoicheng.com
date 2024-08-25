@@ -93,7 +93,7 @@ a {
   color: var(--primary-color);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   body {
     font-size: 14px;
     line-height: 200%;
@@ -129,7 +129,7 @@ a {
   li {
     padding: 0;
     margin: 0;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   p {

@@ -83,11 +83,11 @@ To kick things off, I sketched a quick user flow to get a sense of the project�
 
 Here's a summary of the flow:
 
-- Begin with a gallery of dogs, showing their photos and names.
-- Click on a dog to view its detailed profile.
-- Shortlist the dogs you’re interested in meeting.
-- Fill out a form and book a date.
-- Receive confirmation of the date and time, followed by a redirection to the Adoption & Preparation guide.
+1. Begin with a gallery of dogs, showing their photos and names.
+2. Click on a dog to view its detailed profile.
+3. Shortlist the dogs you’re interested in meeting.
+4. Fill out a form and book a date.
+5. Receive confirmation of the date and time, followed by a redirection to the Adoption & Preparation guide.
 
 Let’s walk through this step by step. The following screenshots showcase some screens I created during the process. They’re not perfect, and you might notice inaccuracies that came as I experimented with various distinct elements. Please excuse them!
 
