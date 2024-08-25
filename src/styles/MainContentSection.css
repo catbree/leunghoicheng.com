@@ -75,18 +75,25 @@
   overflow: auto;
 }
 
-.main-content-container pre > code {
-  display: inline;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
-.main-content-container p > code {
+.main-content-container code {
   background: var(--overlay-dark-10-color);
   border: 1px solid var(--primary-color);
   padding: 2px 4px;
   margin: 0px 2px;
   border-radius: 4px;
+}
+
+
+.main-content-container pre > code {
+  display: inline;
+  white-space: pre-wrap;
+  word-break: break-all;
+
+  background: none;
+  border: none;
+  padding: none;
+  margin: none;
+  border-radius: none;
 }
 
 .main-content-container figure:has(em) {
@@ -115,15 +122,20 @@
   text-align: center;
 }
 
+.main-content-section a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 nav.toc {
   margin: 0;
   padding: 0;
   background: none;
 }
 
-.main-content-section a,
-.toc a {
+nav.toc a {
   color: var(--primary-color);
+  font-weight: 400;
 }
 
 .main-content-section a:hover,

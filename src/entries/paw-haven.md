@@ -150,4 +150,4 @@ Another consideration is the time-consuming nature of updating galleries, which 
 
 ## Conclusion
 
-This project was a lot of fun and perfectly aligned with my interests. I’m excited to see how I can develop and validate this concept in a real-world context in the future. This project was also a key inspiration for joining [The Odin Project]("https://www.theodinproject.com/") and enhancing my web development skills. Building a website like this would be really cool to me!
+This project was a lot of fun and perfectly aligned with my interests. I’m excited to see how I can develop and validate this concept in a real-world context in the future. This project was also a key inspiration for joining [The Odin Project](https://www.theodinproject.com/) and enhancing my web development skills. Building a website like this would be really cool to me!
