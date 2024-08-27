@@ -177,7 +177,38 @@ To embed my feed, I found [Mastodon Embed Timeline](https://gitlab.com/idotj/mas
   <em>A screenshot of the homepage in the midst of work in progress</em>
 </figure>
 
-## Currently awaiting feedback
-Right now, I finished up writing my case studies and feel that I am at a good stop. I’m currently at the stage of feedback collection from my trusted peers. I’m eager to hear their thoughts so that I can refine my website further. 
+## Receiving feedback
+I decided it was time to gather some feedback. I shared a working link of my site amongst my friends, as well as a shout-out on the @sunny.garden Mastodon server. After reviewing the responses, these were the key insights.
 
-Stay tuned! I will update this article as I’m continuing to work on it.
+It was reassuring to see that the general impressions aligned with the major themes I aimed for: welcoming, positive, and calming. The hero image on the homepage seems to play a big role in creating that atmosphere.
+
+However, people had mixed feedback on my written work articles. Some found them easy to read and naturally flowing, while others felt that the relaxed format was too loose, offering limited takeaways for hiring managers.
+
+They also highlighted several usability and responsiveness issues. The “LHC” label in the page navigation confused many readers, so I change it to “Home”, which is more universally recognisable. The social feed on the front page also puzzled some readers, as they were unsure of what they were looking at, so I added a header for clarity. Someone pointed out the awkward double scrolling on the homepage when view on mobile, both on the social feed and the page itself. To fix this, I kept the homepage screen height fixed to the mobile viewport so that scrolling only occurs within the social feed.
+
+This comparison shows the before and after of the issues mentioned above and how I addressed them.
+
+<figure>
+  <img src="../assets/entryAssets/portfolio-website-2024-10.png" alt="Side by side comparison of the before and after screenshots of the portfolio homepage on mobile screens. On the left, there is a navigation with a label named 'LHC'. Below it there is an image. Below the image, there is a container that overflows the mobile screen, which contains the mobile feed. On the right, there is a navigation. The original 'LHC' label is replaced with 'Home'. Below it the same image is present. Below the image, there is a header with the text: 'What I've been up to'. Under it, there is the profile feed container which is now fit to the screen and does not overflow.">
+  <em>Before and after comparison of the homepage</em>
+</figure>
+
+After addressing the issues, I turned my attention to improving the articles. I’m working on keeping my articles more laid-back but still getting the main points across. This still needs some work.
+
+## Conclusion
+The website is now mostly complete, and I’m incredibly proud and relieved. There are still some usability issues I haven’t addressed, and I’ve noted them down for the next round of updates. If I kept on working, I’d never get the site launched!
+
+A few things I plan to add (not in order):
+- A call-to-action button on the hero image for certain screen sizes where there's more space.
+- A zoom function that allows readers to zoom in on images, particularly on mobile.
+- A hidden feature, something random and purely for fun, like a hidden music player.
+- A table of content, with more interactions to let readers know which part of the article they're on.
+- A button that brings readers back to the top of a page.
+
+Before I leave, I want to say a huge thank you to those who helped bring my website to life, with special mentions to:
+
+- [@blue](https://sunny.garden/@blue), [@apparentlyrolly](https://sunny.garden/@apparentlyrolly), and [@PonderosaJohn](https://sunny.garden/@PonderosaJohn) from [@sunny.garden](https://sunny.garden/), for their encouragement and feedback, which gave me the confidence I needed to push the site live.
+- **Sam**, who helped me test my site multiple times and even illustrated her points on how to take the website further.
+- **Tish** and **Isaac**, for their detailed and constructive feedback, especially on what hiring managers might look for, covering angles I haven't fully considered but should have.
+- **Steph** and **Rashmita**, for their supportive and positive energy, and for taking time out of their busy days to flag issues.
+- And finally, **Sebastian**, who witnessed nights of me wailing about technical and design issues, and then nights of me zooming around in excitement after I've figured them out. For being my rock.

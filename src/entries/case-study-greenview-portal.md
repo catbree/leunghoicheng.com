@@ -15,7 +15,7 @@ imageUrl: "/assets/entryAssets/greenview-portal-thumbnail.png"
 
 Back in 2019, **[Greenview](https://greenview.sg/about-us/)**, a company who worked in the world of hospitality and sustainability, came to our tech consultancy with a problem. They had a tool called **[Greenview Portal](https://greenview.sg/services/greenview-portal)**, which helps hotels manage their Environmental, Social, and Governance (ESG) data. It sounded great on paper, but the reality was far from it—clunky, difficult to use, and fell short of what businesses needed.
 
-We had our work cut out for us: To rebuild Greenview Portal from the ground up, making it not just functional but user-friendly. This is a short story of how we transformed Greenview Portal into a tool that worked for its users.
+We had our work cut out for us: To rebuild Greenview Portal from the ground up, making it not just functional but user-friendly. This is a short story of how we transformed Greenview Portal into a tool that worked for its users. At the beginning, I was a only product designer on the team.
 
 ## Existing challenges
 
@@ -36,7 +36,7 @@ After discussions with Greenview, Greenview Portal was going to receive a comple
 
 ## Walkthrough of design process
 
-Over the three years I worked on this project, our team tackled various features and issues. Among the many challenges, the bulk input of data records stood out. It was a major pain point for our users and was one of the first features we developed. We aimed to transform this clunky process into a streamlined solution that users would enjoy using.
+Over the three years I worked on this project, our team redesigned and rebuilt the entire platform, including 11 major modules, each containing multiple features. To keep this case study focused, I will discuss the design process for only one feature here: the bulk input of data records. It was a major pain point for our users and was one of the first features we developed. We aimed to transform this clunky process into a streamlined solution that users would enjoy using.
 
 
 ### 1. Research & Discovery
@@ -120,6 +120,11 @@ While this feature case study of bulk data record input captures our rough featu
   <em>For users to have a quick glance at their up-to-date environmental metrics are, they can access the performance tab from their landing page. Our users also take screenshots of this for their sustainability meetings to keep everyone up to date.</em>
 </figure>
 
+## Impact
+Initially, the web app had a modest user base of only around 20 active users a month. By the end of my time with the project, that number had grown to over 5,000 users and approximately 2,500 hotels.
+
+The system supports several prominent brands in the hospitality industry, including Mandarin Oriental and Ascott, among many others. This expansion indicates that our efforts have been successful in meeting the needs of a diverse range of clients, with the full extent of its impact continuing to develop with time.
+
 ## Reflection
 The most significant takeaway from this project was understanding the crucial role of embedding empathy within my team. Initially, we struggled to integrate user feedback into our design process effectively, resulting in wasted time and missed insights from those who took the effort to provide their input. Over time, I worked on weaving this feedback throughout the design phases, ensuring that empathy became a driving force instead of a checkbox on a to-do list.
 
@@ -127,7 +132,5 @@ Creating a culture where empathy informs design is an ongoing challenge, especia
 
 Another key takeaway was the importance of transparent communication. I learned that admitting when I didn’t have the answers and involving the team in problem-solving built trust and often improved our approach. Initially, I feared that this openness might make me appear incompetent, but I discovered that facing issues honestly is far better than risking a failed product. This transparency not only fostered a more collaborative environment, it also encouraged others to be open and constructive.
 
-## Impact
-Initially, the web app had a modest user base of only around 20 active users a month. By the end of my time with the project, that number had grown to over 5,000 users and approximately 2,500 hotels.
+All in all, I'm grateful for the opportunities and lessons I got on this project.
 
-The system supports several prominent brands in the hospitality industry, including Mandarin Oriental and Ascott, among many others. This expansion indicates that our efforts have been successful in meeting the needs of a diverse range of clients, with the full extent of its impact continuing to develop with time.

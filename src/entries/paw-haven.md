@@ -17,10 +17,7 @@ Inspired by my love for animals and a drive to improve my UI design skills, I cr
   <img src="/assets/entryAssets/paw-haven-9.png" alt="A screenshot of a website on a desktop. There is a dark blue top navigation with the following options: home, gallery, and guidelines on the left. On the right, there's a yellow button with a heart and a value counter. Below the navigation, it is split into a left and right side. The left side contains information about the dog. There are two buttons under it, with a yellow button that says 'Meet Casey' and a light blue button that says 'View Next' with a mini Polaroid photo of the next dog, which is named Jujube. On the right section, there is a photo of the dog with an image carousel of another four images. The dog is short-haired, has a black coat with a white belly. It has brown eyes and is looking in the distance, seemingly serious. Information about the dog:'Casey. Gender: Female. Breed: Cross-Breed. Age: Young, 1 year 2 months (as of May 2023). Adoption Eligibility: HDB Approved. Health Status: Vaccinated. Description: Casey is a lovely, playful, and happy puppy. She's always curious to explore new places, meet new people, play with them, and most importantly, she loves food! Due to the Circuit Breaker, Casey has been used to having a human presence all day long, so having someone at home would be great. Also, very much a couch potato, she enjoys humans around wherever they go and is often very curious.">
 </figure>
 
-## Is this even a problem?
-
-Well, probably not.
-
+## A small bone to pick
 Many residents will agree that pet adoption in Singapore faces some serious challenges. Designed to keep pets safe and happy, pet ownership rules here are very strict. From installing permanent window grilles to restrictions on adoptions from rental units, these regulations are well-intentioned but can sometimes miss the mark. I know people who treat their dogs like family yet struggle with adoption through formal channels because of these stringent rules.
 
 In contrast, an unattractive dog gallery seems minor. But do you ever look at restaurant menus and wonder it can be better? I do the same for dog adoption galleries, so I’ve got an itch to scratch.
