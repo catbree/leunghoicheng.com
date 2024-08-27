@@ -68,11 +68,11 @@ Last but definitely not least, we have CAS. Their dog adoption gallery is the mo
   <em>CAS's dog profile page when you click into a specific dog</em>
 </figure>
 
-## Design Concept
+## Design concept
 
 Note: Along the way, I named the project “Paw Haven,” so I’ll refer to it that way instead of calling it “my redesign attempt at a dog adoption site.”
 
-### User Flow
+### User flow
 
 To kick things off, I sketched a quick user flow to get a sense of the project’s scope. I excluded other species like cats and hamsters, focusing solely on dogs. Most adoption sites separate them into different galleries anyway, so this helps streamline the work.
 

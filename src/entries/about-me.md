@@ -17,7 +17,7 @@ I discovered about product design when I first took a course on game design duri
 
 I find joy in helping people make sense of things by creating experiences that are comfortable and easy to use. No one should feel left behind just because technology isn’t intuitive.
 
-## My First Professional Experience
+## My first professional experience
 After graduation, I began my career at a tech consultancy working on Greenview Portal, a tool used by hotel staff who aren’t tech enthusiasts. I loved making their work easier. I stayed there from early 2019 to the end of 2023, leading design from end to end and learning from both successes and failures.
 
 <figure>

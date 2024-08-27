@@ -17,7 +17,7 @@ Back in 2019, **[Greenview](https://greenview.sg/about-us/)**, a company who wor
 
 We had our work cut out for us: To rebuild Greenview Portal from the ground up, making it not just functional but user-friendly. This is a short story of how we transformed Greenview Portal into a tool that worked for its users.
 
-## Existing Challenges
+## Existing challenges
 
 Initially, a full-scale redesign of Greenview Portal wasn’t in the plan, but after speaking with users, stakeholders, and subject experts, the system had some critical flaws.
 

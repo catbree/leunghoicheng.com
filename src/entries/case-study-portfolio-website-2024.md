@@ -14,7 +14,7 @@ imageUrl: "/assets/entryAssets/portfolio-website-2024-thumbnail.png"
 ## Introduction
 I’ve always wanted to have a portfolio website, and now I’ve finally brought it to life. The best part? Complete freedom to do what feels just right. This website isn’t just a portfolio. It’s my internet home, where I can showcase my work and share what I’m up to.
 
-## Conceptual Design
+## Conceptual design
 I envisioned a space that feels warm, cozy, and personal. Here’s a look at the images from my original mood board.
 <figure>
   <img src="../assets/entryAssets/portfolio-website-2024-1.png" alt="A collage of four images. The top left is a glass greenhouse amidst greenery. There is a cloudy sky behind it and a stone pavement leading up to it. On the top right, there is a brown and white cat with some black patches. It sits on a stone pavement with a background of wilted brown grass behind it. The bottom right shows a room with dark moss green walls, and a full-length window on the side overlooking trees. The bottom right is a drawing inspired by a scene in Totoro, with a grassy green hill and blue cloudy sky in the background.In the foreground, there are a few sunflowers.">
