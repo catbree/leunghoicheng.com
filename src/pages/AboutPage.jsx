@@ -76,10 +76,15 @@ function AboutPage() {
     <>
       <Helmet>
         <title>About | Leung Hoi Cheng</title>
+        <meta name="title" content="About" />
         <meta
           name="description"
           content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
         />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://leunghoicheng.com/about" />
+        <meta property="og:title" content="About" />
         <meta
           property="og:description"
           content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
@@ -88,7 +93,21 @@ function AboutPage() {
           property="og:image"
           content="https://leunghoicheng.com/assets/hero-section-animation.gif"
         />
-        <meta property="og:type" content="website" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://leunghoicheng.com/about"
+        />
+        <meta property="twitter:title" content="About" />
+        <meta
+          property="twitter:description"
+          content="Hello, I'm Hoi Cheng, a Product Designer from Singapore."
+        />
+        <meta
+          property="twitter:image"
+          content="https://leunghoicheng.com/assets/hero-section-animation.gif"
+        />
       </Helmet>
       <ContentContainer
         leftColumn={

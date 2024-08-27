@@ -44,10 +44,15 @@ function WorkPage() {
     <>
       <Helmet>
         <title>Work | Leung Hoi Cheng</title>
+        <meta name="title" content="Work" />
         <meta
           name="description"
           content="A collection of my recent work, primarily around product design and web development."
         />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://leunghoicheng.com/work" />
+        <meta property="og:title" content="Work | Leung Hoi Cheng" />
         <meta
           property="og:description"
           content="A collection of my recent work, primarily around product design and web development."
@@ -56,7 +61,18 @@ function WorkPage() {
           property="og:image"
           content="https://leunghoicheng.com/assets/hero-section-animation.gif"
         />
-        <meta property="og:type" content="website" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://leunghoicheng.com/work" />
+        <meta property="twitter:title" content="Work | Leung Hoi Cheng" />
+        <meta
+          property="twitter:description"
+          content="A collection of my recent work, primarily around product design and web development."
+        />
+        <meta
+          property="twitter:image"
+          content="https://leunghoicheng.com/assets/hero-section-animation.gif"
+        />
       </Helmet>
       <StandardContainer
         leftColumn={

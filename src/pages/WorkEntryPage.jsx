@@ -36,20 +36,20 @@ function WorkEntryPage() {
     <>
       <Helmet>
         <title>{frontMatter?.title || ""} | Leung Hoi Cheng</title>
+        <meta name="title" content={frontMatter?.title || ""} />
         <meta name="description" content={frontMatter?.description || ""} />
-        <meta
-          property="og:description"
-          content={frontMatter?.description || ""}
-        />
-        <meta
-          property="og:image"
-          content={
-            frontMatter?.imageUrl
-              ? `https://leunghoicheng.com${frontMatter.imageUrl}`
-              : ""
-          }
-        />
+
         <meta property="og:type" content="website" />
+        <meta property="og:url" content= {`https://leunghoicheng.com${slug}`} />
+        <meta property="og:title" content={frontMatter?.title || ""} />
+        <meta property="og:description" content={frontMatter?.description || "" }/>
+        <meta property="og:image" content={frontMatter?.imageUrl ? `https://leunghoicheng.com${frontMatter.imageUrl}` : "https://leunghoicheng.com/assets/hero-section-animation.gif" } />
+ 
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content= {`https://leunghoicheng.com${slug}`} />
+        <meta property="twitter:title" content={frontMatter?.title || ""} />
+        <meta property="twitter:description" content={frontMatter?.description || "" }/>
+        <meta property="twitter:image" content={frontMatter?.imageUrl ? `https://leunghoicheng.com${frontMatter.imageUrl}` : "https://leunghoicheng.com/assets/hero-section-animation.gif" } />
       </Helmet>
       <ContentContainer
         leftColumn={
