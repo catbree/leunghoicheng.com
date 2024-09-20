@@ -67,8 +67,9 @@ function AboutPage() {
         setFrontMatter(data);
         setToc(toc);
       })
-      .catch((err) => {
+      .catch(() => {
         setError("Error loading content.");
+        console.log(error);
       });
   });
 

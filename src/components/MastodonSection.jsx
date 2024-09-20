@@ -9,8 +9,6 @@ export default function MastodonSection() {
     userId: "112896994477197480",
     profileName: "@catbree",
     insistSearchContainer: true,
-    maxNbPostFetch: "5",
-    maxNbPostShow: "5",
     btnSeeMore: "",
     btnReload: "",
     defaultTheme: "light",
