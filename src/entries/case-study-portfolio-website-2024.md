@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Portfolio Website 2024"
+title: "Portfolio Website 2024"
 slug: /case-study-portfolio-website-2024
 date: 22 Aug 2024
 description: "My personal portfolio website built with React and Vite."
@@ -8,8 +8,6 @@ imageUrl: "/assets/entryAssets/portfolio-website-2024-thumbnail.png"
 ---
 
 [[toc]]
-
----
 
 ## Introduction
 I’ve always wanted to have a portfolio website, and now I’ve finally brought it to life. The best part? Complete freedom to do what feels just right. This website isn’t just a portfolio. It’s my internet home, where I can showcase my work and share what I’m up to.

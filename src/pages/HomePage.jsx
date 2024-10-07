@@ -1,11 +1,43 @@
 import { Helmet } from "react-helmet-async";
+import { useState, useEffect } from "react";
 
-import { FullScreenContainer } from "../components/Layout";
+import { PageContainer } from "../components/Layout";
 import HeroSection from "../components/HeroSection";
-import HeaderLabelSection from "../components/HeaderLabelSection";
-import MastodonSection from "../components/MastodonSection";
+import AllWorkSection from "../components/AllWorkSection";
+
+import {
+  fetchAllMarkdownEntries,
+  fetchFeaturedWorkEntry,
+} from "../utils/markdownUtils.js";
 
 function HomePage() {
+  const [workList, setWorkList] = useState([]);
+  const [featuredWorkFrontMatter, setFeaturedWorkFrontMatter] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetchAllMarkdownEntries()
+      .then((entries) => {
+        setWorkList(entries);
+      })
+      .catch((err) => {
+        console.error("Error loading work entries:", err);
+        setError("Error loading work entries.");
+      });
+  }, []);
+
+  useEffect(() => {
+    fetchFeaturedWorkEntry()
+      .then((entry) => {
+        setFeaturedWorkFrontMatter(entry.frontMatter);
+      })
+      .catch((err) => {
+        console.error("Error loading featured work entry:", err);
+        setError("Error loading featured work entry.");
+      });
+  }, []);
+
+  if (error) return <div>{error}</div>;
   return (
     <>
       <Helmet>
@@ -40,13 +72,12 @@ function HomePage() {
           content="https://leunghoicheng.com/assets/hero-section-animation.gif"
         />
       </Helmet>
-      <FullScreenContainer
-        leftColumn={<HeroSection />}
-        rightColumn={
-          <>
-            <HeaderLabelSection title="What I've been up to" />
-            <MastodonSection />
-          </>
+      <PageContainer
+        body={
+          <div>
+            <HeroSection />
+            <AllWorkSection workList={workList} />
+          </div>
         }
       />
     </>

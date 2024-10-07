@@ -6,8 +6,7 @@ import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
-import { ContentContainer } from "../components/Layout";
-import ContentNavSection from "../components/ContentNavSection";
+import { PageContainer } from "../components/Layout";
 import MainContentSection from "../components/MainContentSection";
 import ImageContentSection from "../components/ImageContentSection";
 
@@ -110,21 +109,16 @@ function AboutPage() {
           content="https://leunghoicheng.com/assets/hero-section-animation.gif"
         />
       </Helmet>
-      <ContentContainer
-        leftColumn={
-          <MainContentSection
-            content={contentwithToc}
-            date={frontMatter?.date || ""}
-            title={frontMatter?.title || ""}
-          />
-        }
-        rightColumn={
-          <>
+      <PageContainer
+        body={
+          <div>
             <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
-            <ContentNavSection>
-              <div dangerouslySetInnerHTML={{ __html: toc }} />
-            </ContentNavSection>
-          </>
+            <MainContentSection
+              content={contentwithToc}
+              date={frontMatter?.date || ""}
+              title={frontMatter?.title || ""}
+            />
+          </div>
         }
       />
     </>

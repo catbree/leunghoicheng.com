@@ -1,41 +1,12 @@
 import PropTypes from "prop-types";
 import "../styles/Layout.css";
 
-function FullScreenContainer({ leftColumn, rightColumn }) {
+function PageContainer({ body }) {
   return (
-    <div className="container full-screen">
-      <div className="background-layer"></div>
+    <div className="page-container">
       <Header />
-      <div className="column-grid home">
-        <div className="left-column">{leftColumn}</div>
-        <div className="right-column">{rightColumn}</div>
-      </div>
-    </div>
-  );
-}
-
-function StandardContainer({ leftColumn, rightColumn }) {
-  return (
-    <div className="container standard">
-      <div className="background-layer"></div>
-      <Header />
-      <div className="column-grid reversed-grid">
-        <div className="left-column">{leftColumn}</div>
-        <div className="right-column">{rightColumn}</div>
-      </div>
-    </div>
-  );
-}
-
-function ContentContainer({ leftColumn, rightColumn }) {
-  return (
-    <div className="container standard">
-      <div className="background-layer"></div>
-      <Header />
-      <div className="column-grid content-heavy-grid">
-        <div className="left-column">{leftColumn}</div>
-        <div className="right-column">{rightColumn}</div>
-      </div>
+      <div className="body">{body}</div>
+      <Footer />
     </div>
   );
 }
@@ -45,32 +16,51 @@ function Header() {
     <nav>
       <ul className="nav-links">
         <li>
-          <a href="/" id="LHC">HOME</a>
-        </li>
-        <li>
-          <a href="/work">WORK</a>
-        </li>
-        <li>
-          <a href="/about">ABOUT</a>
+          <a href="/" id="home">hoi cheng</a>
         </li>
       </ul>
-      {/* <ul className="mode-options">
+      <ul className="nav-links">
         <li>
-          <a id="mode-toggle">Mode</a>
+          <a href="/">Work</a>
         </li>
-      </ul> */}
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
     </nav>
   );
 }
 
-export { FullScreenContainer, StandardContainer, ContentContainer };
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-left">
+        <p>Designed and coded by Hoi Cheng &copy; 2024</p>
+      </div>
+      <div className="footer-right">
+        <a
+          href="https://www.linkedin.com/in/leunghoicheng"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/icons/linkedin-in-brands-solid.svg"
+            alt="LinkedIn"
+            className="footer-icon"
+          />
+        </a>
+        <a href="mailto:hoichengleung@gmail.com">
+          <img src="/assets/icons/envelope-regular.svg" alt="Email" className="footer-icon" />
+        </a>
+      </div>
+    </footer>
+  );
+}
+
+export { PageContainer };
 
 // Defining prop types for validation
 
-FullScreenContainer.propTypes = {
-  children: PropTypes.element,
-};
-
-StandardContainer.propTypes = {
-  children: PropTypes.element,
+PageContainer.propTypes = {
+  body: PropTypes.element,
 };

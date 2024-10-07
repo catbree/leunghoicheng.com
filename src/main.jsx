@@ -1,18 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import "./styles/global.css";
 
 import HomePage from "./pages/HomePage";
-import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import WorkEntryPage from "./pages/WorkEntryPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "/work", element: <WorkPage /> },
+  { path: "/work", element: <Navigate to="/" /> },
   { path: "work/:slug", element: <WorkEntryPage /> },
   { path: "/about", element: <AboutPage /> },
   { path: "*", element: <h1>Error Page</h1> },

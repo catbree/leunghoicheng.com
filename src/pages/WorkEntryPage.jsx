@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { ContentContainer } from "../components/Layout";
+import { PageContainer } from "../components/Layout";
 import ContentNavSection from "../components/ContentNavSection";
 import MainContentSection from "../components/MainContentSection";
 import ImageContentSection from "../components/ImageContentSection";
@@ -40,32 +40,50 @@ function WorkEntryPage() {
         <meta name="description" content={frontMatter?.description || ""} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content= {`https://leunghoicheng.com${slug}`} />
+        <meta property="og:url" content={`https://leunghoicheng.com${slug}`} />
         <meta property="og:title" content={frontMatter?.title || ""} />
-        <meta property="og:description" content={frontMatter?.description || "" }/>
-        <meta property="og:image" content={frontMatter?.imageUrl ? `https://leunghoicheng.com${frontMatter.imageUrl}` : "https://leunghoicheng.com/assets/hero-section-animation.gif" } />
- 
+        <meta
+          property="og:description"
+          content={frontMatter?.description || ""}
+        />
+        <meta
+          property="og:image"
+          content={
+            frontMatter?.imageUrl
+              ? `https://leunghoicheng.com${frontMatter.imageUrl}`
+              : "https://leunghoicheng.com/assets/hero-section-animation.gif"
+          }
+        />
+
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content= {`https://leunghoicheng.com${slug}`} />
+        <meta
+          property="twitter:url"
+          content={`https://leunghoicheng.com${slug}`}
+        />
         <meta property="twitter:title" content={frontMatter?.title || ""} />
-        <meta property="twitter:description" content={frontMatter?.description || "" }/>
-        <meta property="twitter:image" content={frontMatter?.imageUrl ? `https://leunghoicheng.com${frontMatter.imageUrl}` : "https://leunghoicheng.com/assets/hero-section-animation.gif" } />
+        <meta
+          property="twitter:description"
+          content={frontMatter?.description || ""}
+        />
+        <meta
+          property="twitter:image"
+          content={
+            frontMatter?.imageUrl
+              ? `https://leunghoicheng.com${frontMatter.imageUrl}`
+              : "https://leunghoicheng.com/assets/hero-section-animation.gif"
+          }
+        />
       </Helmet>
-      <ContentContainer
-        leftColumn={
-          <MainContentSection
-            content={contentwithToc}
-            date={frontMatter?.date || ""}
-            title={frontMatter?.title || ""}
-          />
-        }
-        rightColumn={
-          <>
+      <PageContainer
+        body={
+          <div>
             <ImageContentSection imageUrl={frontMatter?.imageUrl || ""} />
-            <ContentNavSection>
-              <div dangerouslySetInnerHTML={{ __html: toc }} />
-            </ContentNavSection>
-          </>
+            <MainContentSection
+              content={contentwithToc}
+              date={frontMatter?.date || ""}
+              title={frontMatter?.title || ""}
+            />
+          </div>
         }
       />
     </>

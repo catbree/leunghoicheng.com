@@ -6,16 +6,15 @@ export default function AllWorkSection({ workList }) {
     <div className="work-list">
       {workList.map((work) => (
         <Link
-          className="work-item-container"
+          className="work-item-card"
           key={work.slug}
           to={`/work${work.slug}`}
         >
-          <div className="image-container">
-            <img src={work.imageUrl}></img>
-          </div>
-          <div className="content-container">
-            <h2>{work.title}</h2>
-            <p>{work.description}</p>
+          <div className="card-image">
+            <img src={work.imageUrl} alt={work.title}></img>
+            <div className="card-overlay">
+              <h3>{work.title}</h3>
+            </div>
           </div>
         </Link>
       ))}

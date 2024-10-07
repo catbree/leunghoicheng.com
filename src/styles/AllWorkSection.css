@@ -1,92 +1,72 @@
 .work-list {
-    background-color: var(--overlay-60-color);
-    border-radius: 24px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 40px 0px;
 }
 
-.work-item-container {
-    display: flex;
-    overflow: hidden;
-    gap: 24px;
-    border-bottom: 1px solid var(--base-30-color);
-    align-items: center;
-    padding: 24px;
-
-    transition: background-color 0.1s ease;
+.work-item-card {
+  position: relative;
+  overflow: hidden;
 }
 
-.work-item-container h2{
-    transition: color 0.1s ease;
+.card-image {
+  position: relative;
+  padding-top: 75%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth transition for fading effect */
 }
 
-.work-item-container:last-of-type {
-    border-bottom: none;
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth transition for the image fading */
 }
 
-.work-item-container:hover {
-    background-color: var(--overlay-dark-10-color);
-    transition: background-color 0.1s ease;
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-30-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  padding: 80px;
+  box-sizing: border-box;
+  gap: 6px;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Smooth transition for overlay appearance */
 }
 
-.work-item-container:hover h2 {
-    color: var(--primary-color);
-    transition: color 0.1s ease;
+.card-image:hover img {
+  opacity: 0.2;
 }
 
-.image-container {
-    flex: 1 0 100px;
-
-    display: flex;
-    align-items: center;
+.card-image:hover .card-overlay {
+  opacity: 1;
 }
 
-.image-container img {
-    border-radius: 24px;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    
-    
+.card-overlay h3 {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.content-container {
-    flex: 8;
+/* ---- Responsiveness ---- */
 
-    margin:0;
-    padding:0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.content-container h2 {
-    margin: 0;
-    padding: 0;
-
-    color: var(--base-90-color);
-}
-
-.content-container p {
-    margin: 0;
-    padding: 0;
-
-    line-height: 130%;
-
-    color: var(--base-90-color);
-}
-
-a:link { 
-    text-decoration: none; 
-  } 
-  a:visited { 
-    text-decoration: none; 
-  } 
-  a:hover { 
-    text-decoration: none; 
-  } 
-  a:active { 
-    text-decoration: none; 
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  .work-list {
+    grid-template-columns: 1fr;
   }
+
+}
