@@ -56,7 +56,7 @@ h1 {
 
 h2 {
   padding: 0;
-  margin: clamp(12px, 2.5vw, 20px) 0;
+  margin: clamp(12px, 2.7vw, 20px) 0;
   font-family: "Piazzolla", serif;
   font-weight: 600;
   font-size: clamp(1.8rem, 3vw, 2.4rem); /* Fits between h2 and paragraph text */
