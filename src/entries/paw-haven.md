@@ -3,8 +3,7 @@ title: "Revamping Pet Adoption Galleries"
 slug: /paw-haven
 date: 6 Jun 2023
 description: "A UI exploration to improve outdated pet adoption galleries in Singapore"
-tags: uidesign
-imageUrl: "/assets/entryAssets/paw-haven-thumbnail.png"
+imageUrl: "/assets/entryAssets/paw-haven-thumbnail.gif"
 ---
 
 [[toc]]
@@ -14,7 +13,7 @@ imageUrl: "/assets/entryAssets/paw-haven-thumbnail.png"
 Inspired by my love for animals and a drive to improve my UI design skills, I created a challenge for myself: make outdated pet adoption galleries look better!
 
 <figure>
-  <img src="/assets/entryAssets/paw-haven-9.png" alt="A screenshot of a website on a desktop. There is a dark blue top navigation with the following options: home, gallery, and guidelines on the left. On the right, there's a yellow button with a heart and a value counter. Below the navigation, it is split into a left and right side. The left side contains information about the dog. There are two buttons under it, with a yellow button that says 'Meet Casey' and a light blue button that says 'View Next' with a mini Polaroid photo of the next dog, which is named Jujube. On the right section, there is a photo of the dog with an image carousel of another four images. The dog is short-haired, has a black coat with a white belly. It has brown eyes and is looking in the distance, seemingly serious. Information about the dog:'Casey. Gender: Female. Breed: Cross-Breed. Age: Young, 1 year 2 months (as of May 2023). Adoption Eligibility: HDB Approved. Health Status: Vaccinated. Description: Casey is a lovely, playful, and happy puppy. She's always curious to explore new places, meet new people, play with them, and most importantly, she loves food! Due to the Circuit Breaker, Casey has been used to having a human presence all day long, so having someone at home would be great. Also, very much a couch potato, she enjoys humans around wherever they go and is often very curious.">
+  <video className="image-container" autoPlay loop muted playsInline src="/assets/entryAssets/paw-haven-3.mp4">
 </figure>
 
 ## A small bone to pick

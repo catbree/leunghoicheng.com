@@ -4,11 +4,11 @@ import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
 const workEntries = {
-  "case-study-portfolio-website-2024": () =>
-    import("../entries/case-study-portfolio-website-2024.md"),
   "case-study-greenview-portal": () =>
     import("../entries/case-study-greenview-portal.md"),
   "paw-haven": () => import("../entries/paw-haven.md"),
+  "case-study-portfolio-website-2024": () =>
+    import("../entries/case-study-portfolio-website-2024.md"),
 };
 
 const featuredWorkEntry = "case-study-greenview-portal";

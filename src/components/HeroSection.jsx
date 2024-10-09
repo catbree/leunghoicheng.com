@@ -10,13 +10,13 @@ export default function HeroSection() {
           that help people make sense of things
         </p>
         <p>
-          currently looking for new job opporunities!
+          currently looking for new job opportunities!
         </p>
       </div>
       <div className="hero-image">
         <img
           src="assets/hero-section-animation.gif"
-          alt="Animation featuring a large centered title that reads 'Hoi Cheng Product Designer,' with a black cat sitting on the letter G. The title is displayed above a pavement with grass. There are two clouds in the background."
+          alt="A pixel animation featuring a black cat with a waving tail sitting on grass. The black cat has yellow eyes and is wearing a red collar with a gold bell."
         ></img>
       </div>
     </div>
