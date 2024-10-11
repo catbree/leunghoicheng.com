@@ -4,14 +4,12 @@ import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
 const workEntries = {
-  "case-study-greenview-portal": () =>
-    import("../entries/case-study-greenview-portal.md"),
+  "greenview-portal": () =>
+    import("../entries/greenview-portal.md"),
   "paw-haven": () => import("../entries/paw-haven.md"),
   "case-study-portfolio-website-2024": () =>
     import("../entries/case-study-portfolio-website-2024.md"),
 };
-
-const featuredWorkEntry = "case-study-greenview-portal";
 
 //Process a single markdown entry to get its frontmatter and content
 export const fetchMarkdownEntry = (slug) => {
@@ -44,11 +42,6 @@ export const fetchAllMarkdownEntries = () => {
       }))
     )
   );
-};
-
-//Fetch featured entry
-export const fetchFeaturedWorkEntry = () => {
-  return fetchMarkdownEntry(featuredWorkEntry);
 };
 
 //Generate table of content if [[toc]] available in md

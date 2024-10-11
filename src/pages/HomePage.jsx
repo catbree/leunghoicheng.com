@@ -7,12 +7,10 @@ import AllWorkSection from "../components/AllWorkSection";
 
 import {
   fetchAllMarkdownEntries,
-  fetchFeaturedWorkEntry,
 } from "../utils/markdownUtils.js";
 
 function HomePage() {
   const [workList, setWorkList] = useState([]);
-  const [featuredWorkFrontMatter, setFeaturedWorkFrontMatter] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -23,17 +21,6 @@ function HomePage() {
       .catch((err) => {
         console.error("Error loading work entries:", err);
         setError("Error loading work entries.");
-      });
-  }, []);
-
-  useEffect(() => {
-    fetchFeaturedWorkEntry()
-      .then((entry) => {
-        setFeaturedWorkFrontMatter(entry.frontMatter);
-      })
-      .catch((err) => {
-        console.error("Error loading featured work entry:", err);
-        setError("Error loading featured work entry.");
       });
   }, []);
 

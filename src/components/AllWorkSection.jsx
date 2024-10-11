@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "../styles/AllWorkSection.css";
 
@@ -21,3 +22,9 @@ export default function AllWorkSection({ workList }) {
     </div>
   );
 }
+
+// Defining prop types for validation
+
+AllWorkSection.propTypes = {
+  workList: PropTypes.element,
+};
