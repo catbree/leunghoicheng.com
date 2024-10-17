@@ -4,6 +4,8 @@ import anchor from "markdown-it-anchor";
 import Toc from "markdown-it-toc-done-right";
 
 const workEntries = {
+  "esg-bulk-data-input": () =>
+    import("../entries/esg-bulk-data-input.md"),
   "greenview-portal": () =>
     import("../entries/greenview-portal.md"),
   "paw-haven": () => import("../entries/paw-haven.md"),
