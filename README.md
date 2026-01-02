@@ -1,5 +1,5 @@
 # leunghoicheng.com
-Portfolio website of Leung Hoi Cheng. It is a fully custom-designed and built using React and Vite. Optimised for responsivess, it should work across all browsers and devices. It contains case studies of select projects.
+Portfolio website of Leung Hoi Cheng. Custom-designed and built using React and Vite. Optimised for responsivess, it should work across all browsers and devices. It contains case studies of select projects.
 
 To run the site locally, start by cloning the repository:
    ```bash
