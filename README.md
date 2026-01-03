@@ -3,7 +3,7 @@ Portfolio website of Leung Hoi Cheng. Custom-designed and built using React and 
 
 To run the site locally, start by cloning the repository:
    ```bash
-   git clone https://github.com/your-username/leunghoicheng.com
+   git clone https://github.com/catbree/leunghoicheng.com
    ```
 Next, navigate to the repository:
  ```bash
